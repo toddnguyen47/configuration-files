@@ -1,0 +1,11 @@
+* text=auto, eol=lf
+
+# Text
+*.cfg text
+*.json text
+*.xml text
+
+# Binary
+*.jpg binary
+*.jpeg binary
+*.png binary
