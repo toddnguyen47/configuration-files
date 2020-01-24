@@ -1,0 +1,3 @@
+# How to Install
+Simply run `mvn install` and you're set!
+
