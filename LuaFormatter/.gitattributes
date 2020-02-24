@@ -1,0 +1,14 @@
+text=auto, eol=lf
+
+# Text files
+*.sh text
+*.py text
+*.luaformatter text
+*.md text
+*.json text
+*.gpg text
+
+# Binary
+*.png binary
+*.jpeg binary
+*.jpg binary
