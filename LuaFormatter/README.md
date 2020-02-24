@@ -1,6 +1,6 @@
 # Lua Setup
 
-The setup that we are currently using for Lua.
+The setup that we are currently using for Lua. These scripts will compile [LuaFormatter](https://github.com/Koihik/LuaFormatter) and use it as our main Lua autoformatter in [Visual Studio Code](https://code.visualstudio.com/).
 
 # Compile LuaFormatter
 
