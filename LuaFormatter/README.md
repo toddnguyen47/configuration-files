@@ -33,7 +33,8 @@ The extensions we are using:
 
 ## Extension Configuration
 
-- Open `settings_to_append.json` in our current directory and copy everything between the two braces, '{' on line 1 and its matching '}'. 
+- When you executed `01_installLuaFormatter.sh`, it will also generate some settings and output it to a file called `settings_to_append.json`
+- Open `settings_to_append.json` in our current directory and copy everything between the two braces, `{` on line 1 and its matching `}`. 
 - In Visual Studio Code, type in the keyboard shortcut `Ctrl + Shift + P` to open
   the Command Palette.
 - In the Command Palette, type in `>Preferences: Open Settings (JSON)` and press Enter. The `>`
@@ -45,3 +46,4 @@ The extensions we are using:
 # Questions? Concerns?
 
 Email me at todd.nguyen47@gmail.com !
+
