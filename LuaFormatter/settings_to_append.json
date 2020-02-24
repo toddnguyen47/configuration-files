@@ -1,6 +1,0 @@
-{
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "Koihik.vscode-lua-format",
-  "vscode-lua-format.binaryPath": "/home/todd/opt/LuaFormatter/bin/lua-format",
-  "vscode-lua-format.configPath": "/home/todd/opt/LuaFormatter/config.luaformatter"
-}
