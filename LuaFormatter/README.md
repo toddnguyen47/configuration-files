@@ -24,7 +24,7 @@ $ chmod +x 01_installLuaFormatter.sh
 $ ./01_installLuaFormatter.sh
 ```
 
-# Extension
+# Extensions
 
 The extensions we are using:
 
