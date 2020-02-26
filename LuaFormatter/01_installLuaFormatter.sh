@@ -16,6 +16,7 @@ clone_if_directory_does_not_exist() {
 generate_settings_json() {
   cd $cur_wd
   python3 01_generate_config.py $installDirectory
+  cp -v config.luaformatter $installDirectory
 }
 
 printf "Installing to %s\n" $installDirectory
