@@ -10,8 +10,8 @@ addToolchainRepository() {
   apt-get update
 }
 
-installDefaultUbuntuGcc() {
-  apt-get -y install build-essential cmake
+installPrerequisites() {
+  apt-get -y install build-essential cmake git
 }
 
 installGccGpp9() {
@@ -31,7 +31,7 @@ endOfScript() {
 
 # Execute functions!
 execute() {
-  installDefaultUbuntuGcc
+  installPrerequisites
   addToolchainRepository
   installGccGpp9
   useGcc9AsDefault
