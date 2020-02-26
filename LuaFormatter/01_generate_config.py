@@ -4,7 +4,6 @@ import sys
 
 config_dict = {
     "editor.formatOnSave": True,
-    "editor.defaultFormatter": "Koihik.vscode-lua-format",
     "vscode-lua-format.binaryPath": "",
     "vscode-lua-format.configPath": ""
 }
