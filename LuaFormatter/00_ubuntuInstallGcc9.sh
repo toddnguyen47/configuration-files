@@ -11,7 +11,7 @@ addToolchainRepository() {
 }
 
 installDefaultUbuntuGcc() {
-  apt-get -y install build-essential
+  apt-get -y install build-essential cmake
 }
 
 installGccGpp9() {
