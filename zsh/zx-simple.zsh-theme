@@ -15,7 +15,7 @@ current_directory() {
 }
 
 current_user() {
-  printf "$fg[green][$USER]$(reset_color_func) "
+  printf "$fg[yellow][$USER]$(reset_color_func) "
 }
 
 current_time() {
