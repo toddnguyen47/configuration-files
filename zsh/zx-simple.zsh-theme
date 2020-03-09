@@ -2,6 +2,10 @@
 # Documentation here: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # Ref for root: https://askubuntu.com/a/707654
 
+prompt_char() {
+  printf "$ "
+}
+
 reset_color_func() {
   printf "$reset_color"
 }
@@ -22,10 +26,6 @@ current_time() {
   printf "[$(date +%H:%M)] "
 }
 
-
-prompt_char() {
-  printf "↳ "
-}
 
 exit_status() {
   local last_command_exit_status=$?
