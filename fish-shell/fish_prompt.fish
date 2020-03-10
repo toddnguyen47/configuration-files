@@ -1,4 +1,5 @@
 function set_fish_prompt_pwd_dir_length
+    # Ref: https://fishshell.com/docs/current/cmds/prompt_pwd.html
     set -l work_dir (pwd)
     # Cut the prompt if it exceeds 80 characters
     if test (string length $work_dir) -gt 80
