@@ -1,6 +1,19 @@
+function set_fish_prompt_pwd_dir_length
+    set -l work_dir (pwd)
+    # Cut the prompt if it exceeds 80 characters
+    if test (string length $work_dir) -gt 80
+        set -g fish_prompt_pwd_dir_length 3
+    else
+        set -g fish_prompt_pwd_dir_length 0
+    end
+end
+
 function fish_prompt --description 'Write out the prompt'
-	#Save the return status of the previous command
+	  # Save the return status of the previous command
     set stat $status
+
+    # Shorten the current working directory
+    set_fish_prompt_pwd_dir_length
 
     if not set -q __fish_prompt_normal
         set -g __fish_prompt_normal (set_color normal)
@@ -17,9 +30,7 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     switch "$USER"
-
         case root toor
-
             if not set -q __fish_prompt_cwd
                 if set -q fish_color_cwd_root
                     set -g __fish_prompt_cwd (set_color $fish_color_cwd_root)
@@ -35,7 +46,6 @@ function fish_prompt --description 'Write out the prompt'
               "$__fish_prompt_normal"
 
         case '*'
-
             if not set -q __fish_prompt_cwd
                 set -g __fish_prompt_cwd (set_color $fish_color_cwd)
             end
@@ -45,7 +55,7 @@ function fish_prompt --description 'Write out the prompt'
               "$__fish_color_blue" \
               $USER (prompt_hostname) \
               "$__fish_prompt_cwd" \
-              "$PWD" \
+              (prompt_pwd) \
               "$__fish_color_status" \
               "$stat" \
               "$__fish_prompt_normal"
