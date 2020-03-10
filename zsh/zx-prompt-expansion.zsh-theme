@@ -17,7 +17,7 @@ PROMPT+="%{$fg_bold[cyan]%}%/"
 PROMPT+="%b%{$fg[yellow]%} [%n]"
 
 # Time
-PROMPT+="%{$fg[default]%} ⌚%T"
+PROMPT+="%{$fg[default]%} ⌚ %T"
 
 # Git status
 PROMPT+="
