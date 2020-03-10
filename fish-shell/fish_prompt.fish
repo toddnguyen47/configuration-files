@@ -1,5 +1,4 @@
 function set_fish_prompt_pwd_dir_length
-    # Ref: https://fishshell.com/docs/current/cmds/prompt_pwd.html
     set -l work_dir (pwd)
     # Cut the prompt if it exceeds 80 characters
     if test (string length $work_dir) -gt 80
@@ -24,11 +23,21 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_color_blue (set_color -o blue)
     end
 
-    #Set the color for the status depending on the value
-    set __fish_color_status (set_color -o green)
+    if not set -q __fish_color_yellow_bold
+        set -g __fish_color_yellow_bold (set_color -o yellow)
+    end
+
+    # Set the color for the status depending on the value. `Green` is default for "OK" status,
+    # but I like `normal` color better.
+    #set __fish_color_status (set_color -o green)
+    set __fish_color_status (set_color normal)
     if test $stat -gt 0
         set __fish_color_status (set_color -o red)
     end
+
+    # Set prompt
+    set -l prompt_char "↳"
+    set -l prompt_char_with_color (printf '%s%s%s' $__fish_color_status $prompt_char $__fish_prompt_normal)
 
     switch "$USER"
         case root toor
@@ -51,16 +60,14 @@ function fish_prompt --description 'Write out the prompt'
                 set -g __fish_prompt_cwd (set_color $fish_color_cwd)
             end
 
-            printf '<< [%s] %s%s@%s >>\n%s%s %s(%s)%s \f\r↳ ' \
+            printf '%s<< %s@%s [%s] >>\n%s%s\n%s ' \
+              "$__fish_color_yellow_bold" \
+              $USER \
+              (prompt_hostname) \
               (date "+%H:%M:%S") \
-              "$__fish_color_blue" \
-              $USER (prompt_hostname) \
               "$__fish_prompt_cwd" \
               (prompt_pwd) \
-              "$__fish_color_status" \
-              "$stat" \
-              "$__fish_prompt_normal"
-
+              "$prompt_char_with_color"
     end
 end
 
