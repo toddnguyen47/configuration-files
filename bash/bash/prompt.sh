@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Ref: https://stackoverflow.com/a/16715681
 PROMPT_COMMAND=__prompt_command # Func to gen PS1 after CMDs
 
