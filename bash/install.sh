@@ -4,7 +4,7 @@
 mkdir -p ~/.bash/
 mkdir -p ~/.bash/completions
 
-# Copy fils over
+# Copy files over
 cp -rv bash/* ~/.bash/
 cp -v addBashRc.sh ~/.addBashRc.sh
 
