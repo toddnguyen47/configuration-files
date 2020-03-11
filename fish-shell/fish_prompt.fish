@@ -31,13 +31,15 @@ function fish_prompt --description 'Write out the prompt'
     # but I like `normal` color better.
     #set __fish_color_status (set_color -o green)
     set __fish_color_status (set_color normal)
+    set -l prompt_char "↳"
     if test $stat -gt 0
         set __fish_color_status (set_color -o red)
+        set prompt_char "✘"
     end
 
     # Set prompt
-    set -l prompt_char "↳"
-    set -l prompt_char_with_color (printf '%s%s%s' $__fish_color_status $prompt_char $__fish_prompt_normal)
+    set -l prompt_char_with_color \
+      (printf '%s%s%s' $__fish_color_status $prompt_char $__fish_prompt_normal)
 
     switch "$USER"
         case root toor
@@ -60,7 +62,7 @@ function fish_prompt --description 'Write out the prompt'
                 set -g __fish_prompt_cwd (set_color $fish_color_cwd)
             end
 
-            printf '%s<< %s@%s [%s] >>\n%s%s\n%s ' \
+            printf '%s<< %s@%s ⌚ %s >>\n%s%s\n%s ' \
               "$__fish_color_yellow_bold" \
               $USER \
               (prompt_hostname) \

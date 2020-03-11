@@ -1,5 +1,6 @@
 # Ref: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
 prompt_char="$"
+prompt_char_error="✘"
 
 # These are copied from robbyrussell"s theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
@@ -23,6 +24,9 @@ PROMPT+="%{$fg[default]%} ⌚ %T"
 PROMPT+="
 $(git_prompt_info)"
 
-# Now prompt char! Turns the prompt char red if there was an error
-PROMPT+="%(?.%{$fg[default]%}.%{$fg_bold[red]%})$prompt_char%{$reset_color%} "
+# Now prompt char! Turns the prompt char red and into `✘` if there was an error
+PROMPT+="%(?.%{$fg[default]%}$prompt_char.%{$fg_bold[red]%}$prompt_char_error)"
+
+# Reset all colors and add a space after the prompt
+PROMPT+="%{$reset_color%} "
 
