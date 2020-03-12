@@ -5,8 +5,7 @@
 # Ref: https://stackoverflow.com/a/11676016
 dirOfThisScript="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
-for bashfile in $dirOfThisScript/completions/*.bash;
-do
+for bashfile in $dirOfThisScript/completions/*.bash; do
   printf "Adding completion: $bashfile\n"
   source "$bashfile"
 done

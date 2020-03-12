@@ -9,8 +9,7 @@ mkdir -p ~/.bash/completions
 
 # Run all scripts in ~/.bash directory
 # Ref: https://stackoverflow.com/a/10523501
-for file in ~/.bash/*.sh
-do
+for file in ~/.bash/*.sh; do
   printf "sourcing $file\n"
   source "$file"
 done

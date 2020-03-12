@@ -1,4 +1,5 @@
 #!/bin/bash
 
-alias rm='trash'
 alias igrep='grep --color=auto -i'
+alias lla='ls -la'
+alias rm='trash'

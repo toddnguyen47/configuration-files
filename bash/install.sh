@@ -15,7 +15,7 @@ bashrcFile="$HOME/.bashrc"
 # `grep` will set the exit status `$?` to 0 if found, 1 if not found
 grep -Fxq "$addBashRcCommand" "$bashrcFile"
 if [[ $? -ne 0 ]] ; then
-  printf "%s\n\n" "$addBashRcCommand" | tee -a "$bashrcFile"
+  printf "\n%s\n\n" "$addBashRcCommand" | tee -a "$bashrcFile"
 fi
 
 printf "Installation finished!\n"
