@@ -2,51 +2,51 @@
 # Documentation here: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # Ref for root: https://askubuntu.com/a/707654
 
-prompt_char() {
+_prompt_char() {
   printf "%s%s" \
     "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
     "%(?."$"."✘")"
 }
 
-insert_space() {
+_insert_space() {
   printf " "
 }
 
-reset_bg_fg_color() {
+_reset_bg_fg_color() {
   printf "%s" "%{%f%b%k%}"
 }
 
-current_directory() {
+_current_directory() {
   printf "%s%s" \
     "%{$fg_bold[cyan]%}" \
     "%/"
 }
 
-user_name() {
+_user_name() {
   printf "%s[%s]" \
     "%{$fg_bold[yellow]%}" \
     "%n"
 }
 
-current_time() {
+_current_time() {
   printf "%s ⌚ %s" \
     %{$reset_color%} \
     "%T"
 }
 
 build_prompt() {
-  reset_bg_fg_color
-  current_directory
-  insert_space
-  user_name
-  insert_space
-  current_time
+  _reset_bg_fg_color
+  _current_directory
+  _insert_space
+  _user_name
+  _insert_space
+  _current_time
 }
 
 
 # Reset background and foreground before building a prompt
 PROMPT='$(build_prompt)
-$(git_prompt_info)$(prompt_char)%{$reset_color%} '
+$(git_prompt_info)$(_prompt_char)%{$reset_color%} '
 
 # These are copied from robbyrussell's theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
