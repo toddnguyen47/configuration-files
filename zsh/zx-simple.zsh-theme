@@ -3,50 +3,50 @@
 # Ref for root: https://askubuntu.com/a/707654
 
 prompt_char() {
-  printf "$ "
+  printf "%s%s" \
+    "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
+    "%(?."$"."✘")"
 }
 
-reset_color_func() {
-  printf "$reset_color"
+insert_space() {
+  printf " "
 }
 
-echo_newline() {
-  echo ""
+reset_bg_fg_color() {
+  printf "%s" "%{%f%b%k%}"
 }
 
 current_directory() {
-  printf "$fg_bold[cyan]$(pwd)$(reset_color_func) "
+  printf "%s%s" \
+    "%{$fg_bold[cyan]%}" \
+    "%/"
 }
 
-current_user() {
-  printf "$fg[yellow][$USER]$(reset_color_func) "
+user_name() {
+  printf "%s[%s]" \
+    "%{$fg_bold[yellow]%}" \
+    "%n"
 }
 
 current_time() {
-  printf "[$(date +%H:%M)] "
-}
-
-
-exit_status() {
-  local last_command_exit_status=$?
-  if [[ $last_command_exit_status -ne 0 ]]; then
-    printf "$fg_bold[red][%s ↵]" $last_command_exit_status
-    reset_color_func
-    printf " "
-  fi
+  printf "%s ⌚ %s" \
+    %{$reset_color%} \
+    "%T"
 }
 
 build_prompt() {
-  exit_status
+  reset_bg_fg_color
   current_directory
-  current_user
+  insert_space
+  user_name
+  insert_space
   current_time
 }
 
 
 # Reset background and foreground before building a prompt
-PROMPT='%{%f%b%k%}$(build_prompt)
-$(git_prompt_info)$(prompt_char)'
+PROMPT='$(build_prompt)
+$(git_prompt_info)$(prompt_char)%{$reset_color%} '
 
 # These are copied from robbyrussell's theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
