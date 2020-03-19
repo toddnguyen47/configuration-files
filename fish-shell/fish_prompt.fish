@@ -8,6 +8,28 @@ function set_fish_prompt_pwd_dir_length
     end
 end
 
+function set_global_colors --description 'Set global variables for colors'
+    if not set -q __fish_prompt_normal
+        set -g __fish_prompt_normal (set_color normal)
+    end
+
+    if not set -q __fish_color_blue_bold
+        set -g __fish_color_blue_bold (set_color -o blue)
+    end
+
+    if not set -q __fish_color_yellow_bold
+        set -g __fish_color_yellow_bold (set_color -o yellow)
+    end
+
+    if not set -q __fish_color_bg_blue
+        set -g __fish_color_bg_blue (set_color -b blue)
+    end
+
+    if not set -q __fish_color_bg_cyan
+        set -g __fish_color_bg_cyan (set_color -b cyan)
+    end
+end
+
 function fish_prompt --description 'Write out the prompt'
 	  # Save the return status of the previous command
     set stat $status
@@ -15,17 +37,7 @@ function fish_prompt --description 'Write out the prompt'
     # Shorten the current working directory
     set_fish_prompt_pwd_dir_length
 
-    if not set -q __fish_prompt_normal
-        set -g __fish_prompt_normal (set_color normal)
-    end
-
-    if not set -q __fish_color_blue
-        set -g __fish_color_blue (set_color -o blue)
-    end
-
-    if not set -q __fish_color_yellow_bold
-        set -g __fish_color_yellow_bold (set_color -o yellow)
-    end
+    set_global_colors
 
     # Set the color for the status depending on the value. `Green` is default for "OK" status,
     # but I like `normal` color better.
@@ -62,11 +74,13 @@ function fish_prompt --description 'Write out the prompt'
                 set -g __fish_prompt_cwd (set_color $fish_color_cwd)
             end
 
-            printf '%s<< %s@%s ⌚ %s >>\n%s%s\n%s ' \
+            printf '%s%s<< %s@%s ⌚ %s >>%s\n%s%s\n%s ' \
               "$__fish_color_yellow_bold" \
+              "$__fish_color_bg_cyan" \
               $USER \
               (prompt_hostname) \
               (date "+%H:%M:%S") \
+              "$__fish_prompt_normal" \
               "$__fish_prompt_cwd" \
               (prompt_pwd) \
               "$prompt_char_with_color"
