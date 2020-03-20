@@ -1,0 +1,5 @@
+githubkeys() {
+  #gpg <FILE>
+  #cat <FILE>
+  #rm <FILE>
+}

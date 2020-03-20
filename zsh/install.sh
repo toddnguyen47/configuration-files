@@ -9,3 +9,11 @@ for zsh_theme_file in $dirOfThisScript/themes/*.zsh-theme; do
   cp -v $zsh_theme_file ~/.oh-my-zsh/custom/themes/
 done
 
+# Copy all files in zsh-scripts to ~/.oh-my-zsh/custom
+for zsh_script in $dirOfThisScript/zsh-scripts/*.zsh; do
+  cp -v $zsh_script ~/.oh-my-zsh/custom
+done
+
+# Copy functions folder over to ~/.oh-my-zsh
+cp -rv functions ~/.oh-my-zsh
+
