@@ -1,5 +1,0 @@
-githubkeys() {
-  gpg /home/mobsignet/Documents/githubkeys.txt.gpg
-  cat /home/mobsignet/Documents/githubkeys.txt
-  rm /home/mobsignet/Documents/githubkeys.txt
-}
