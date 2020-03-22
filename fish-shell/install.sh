@@ -13,7 +13,8 @@ fi
 sudo cp -v "$CUR_FILE" "$DEST_FISH_PROMPT_DIR/$CUR_FILE"
 
 # Copy the rest into /usr/share
-DEST_DIR="/home/mobsignet/.config/fish/functions"
+DEST_DIR="$HOME/.config/fish/functions"
+mkdir -p $DEST_DIR
 
 # Ref: https://stackoverflow.com/a/1482133
 # Ref: https://stackoverflow.com/a/11676016
