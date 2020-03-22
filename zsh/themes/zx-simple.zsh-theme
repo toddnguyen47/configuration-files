@@ -19,7 +19,7 @@ _reset_bg_fg_color() {
 _current_directory() {
   printf "%s%s" \
     "%{$fg_bold[cyan]%}" \
-    "%/"
+    "%~"
 }
 
 _user_name() {

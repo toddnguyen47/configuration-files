@@ -12,7 +12,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 PROMPT="%{%f%b%k%}"
 
 # Get current working dir
-PROMPT+="%{$fg_bold[cyan]%}%/"
+PROMPT+="%{$fg_bold[cyan]%}%~"
 
 # User
 PROMPT+="%b%{$fg[yellow]%} [%n]"
