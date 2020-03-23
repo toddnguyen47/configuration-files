@@ -23,9 +23,10 @@ PROMPT+="%b%{$fg[yellow]%} [%n]"
 # Time
 PROMPT+="%{$fg[default]%} ⌚ %T"
 
-# Git status
-PROMPT+="
-$(git_prompt_info)"
+# Git status. NEED to use single quotes to preserve the literal value of each character!
+# Ref: https://stackoverflow.com/a/6697781
+PROMPT+='
+$(git_prompt_info)'
 
 # Now prompt char! Turns the prompt char red and into `✘` if there was an error
 PROMPT+="%(?.%{$fg[default]%}$prompt_char.%{$fg_bold[red]%}$prompt_char_error)"

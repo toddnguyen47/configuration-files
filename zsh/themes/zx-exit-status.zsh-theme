@@ -3,10 +3,11 @@
 # Ref for root: https://askubuntu.com/a/707654
 
 _prompt_char() {
-  local cur_prompt_char='%(!.#.$)'
-  local failed_prompt_char='%(!.#.✘)'
+  local cur_prompt_char="%(!.#.$)"
+  local failed_prompt_char="%(!.#.✘)"
+  local exit_status_code="[%?]"
   printf "%s%s" \
-    "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
+    "%(?.%{$reset_color%}.%{$fg_bold[red]%}${exit_status_code})" \
     "%(?."$cur_prompt_char"."$failed_prompt_char")"
 }
 
@@ -45,16 +46,15 @@ build_prompt() {
   _current_time
 }
 
+
 # Reset background and foreground before building a prompt
-PROMPT="$(build_prompt)"
-# Git status. NEED to use single quotes to preserve the literal value of each character!
+# NEED to use single quotes to preserve the literal value of each character!
 # Ref: https://stackoverflow.com/a/6697781
-PROMPT+='
-$(git_prompt_info)'
-PROMPT+="$(_prompt_char)%{$reset_color%} "
+PROMPT='$(build_prompt)
+$(git_prompt_info)$(_prompt_char)%{$reset_color%} '
 
 # Reset RPROMPT
-RPROMPT=""
+RPROMPT=''
 
 # These are copied from robbyrussell's theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
