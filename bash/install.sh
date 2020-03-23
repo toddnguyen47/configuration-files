@@ -5,8 +5,8 @@ mkdir -p ~/.bash/
 mkdir -p ~/.bash/completions
 
 # Copy files over
-cp -rv bash/* ~/.bash/
-cp -v addBashRc.sh ~/.addBashRc.sh
+cp -rv --no-clobber bash/* ~/.bash/
+cp -v --no-clobber addBashRc.sh ~/.addBashRc.sh
 
 # Add to ~/.bashrc if this line is not in there
 # Ref: https://stackoverflow.com/a/4749368

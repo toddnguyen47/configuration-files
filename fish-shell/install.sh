@@ -20,6 +20,6 @@ mkdir -p $DEST_DIR
 # Ref: https://stackoverflow.com/a/11676016
 dirOfThisScript="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 for fish_file in "$dirOfThisScript/functions/*.fish"; do
-  cp -v $fish_file $DEST_DIR
+  cp -v --no-clobber $fish_file $DEST_DIR
 done
 
