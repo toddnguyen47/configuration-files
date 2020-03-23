@@ -1,7 +1,3 @@
-# Ref: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
-prompt_char="%(!.#.$)"
-prompt_char_error="%(!.#.✘)"
-
 # These are copied from robbyrussell"s theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=" ]%{$reset_color%} "
@@ -10,6 +6,10 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # Reset RPROMPT
 RPROMPT=""
+
+# Ref: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
+prompt_char="%(!.#.$)"
+prompt_char_error="%(!.#.✘)"
 
 # Reset background and foreground
 PROMPT="%{%f%b%k%}"

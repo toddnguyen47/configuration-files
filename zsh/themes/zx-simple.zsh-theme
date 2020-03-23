@@ -2,6 +2,15 @@
 # Documentation here: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # Ref for root: https://askubuntu.com/a/707654
 
+# Reset RPROMPT
+RPROMPT=""
+
+# These are copied from robbyrussell's theme
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX=" ]%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+
 _prompt_char() {
   local cur_prompt_char='%(!.#.$)'
   local failed_prompt_char='%(!.#.✘)'
@@ -49,12 +58,3 @@ build_prompt() {
 # Reset background and foreground before building a prompt
 PROMPT="$(build_prompt)
 $(git_prompt_info)$(_prompt_char)%{$reset_color%} "
-
-# Reset RPROMPT
-RPROMPT=""
-
-# These are copied from robbyrussell's theme
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX=" ]%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
