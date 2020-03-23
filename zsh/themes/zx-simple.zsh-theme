@@ -46,15 +46,13 @@ build_prompt() {
 }
 
 # Reset background and foreground before building a prompt
-PROMPT="$(build_prompt)"
 # Git status. NEED to use single quotes to preserve the literal value of each character!
 # Ref: https://stackoverflow.com/a/6697781
-PROMPT+='
-$(git_prompt_info)'
-PROMPT+="$(_prompt_char)%{$reset_color%} "
+PROMPT='$(build_prompt)
+$(git_prompt_info)$(_prompt_char)%{$reset_color%} '
 
 # Reset RPROMPT
-RPROMPT=""
+RPROMPT=''
 
 # These are copied from robbyrussell's theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
