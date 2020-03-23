@@ -3,9 +3,11 @@
 # Ref for root: https://askubuntu.com/a/707654
 
 _prompt_char() {
+  local cur_prompt_char='%(!.#.$)'
+  local failed_prompt_char='%(!.#.✘)'
   printf "%s%s" \
     "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
-    "%(?."$"."✘")"
+    "%(?."$cur_prompt_char"."$failed_prompt_char")"
 }
 
 _insert_space() {

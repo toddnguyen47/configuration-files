@@ -1,6 +1,6 @@
 # Ref: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
-prompt_char="$"
-prompt_char_error="✘"
+prompt_char="%(!.#.$)"
+prompt_char_error="%(!.#.✘)"
 
 # These are copied from robbyrussell"s theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
