@@ -4,10 +4,9 @@
 
 _prompt_char() {
   local cur_prompt_char="%(!.#.$)"
-  local failed_prompt_char="%(!.#.✘)"
-  local exit_status_code="[%?]"
+  local failed_prompt_char="%(!.#.[%?])"
   printf "%s%s" \
-    "%(?.%{$reset_color%}.%{$fg_bold[red]%}${exit_status_code})" \
+    "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
     "%(?."$cur_prompt_char"."$failed_prompt_char")"
 }
 
@@ -50,8 +49,8 @@ build_prompt() {
 # Reset background and foreground before building a prompt
 # NEED to use single quotes to preserve the literal value of each character!
 # Ref: https://stackoverflow.com/a/6697781
-PROMPT='$(build_prompt)
-$(git_prompt_info)$(_prompt_char)%{$reset_color%} '
+PROMPT='$(build_prompt) $(git_prompt_info)
+$(_prompt_char)%{$reset_color%} '
 
 # Reset RPROMPT
 RPROMPT=''

@@ -48,8 +48,8 @@ build_prompt() {
 # Reset background and foreground before building a prompt
 # Git status. NEED to use single quotes to preserve the literal value of each character!
 # Ref: https://stackoverflow.com/a/6697781
-PROMPT='$(build_prompt)
-$(git_prompt_info)$(_prompt_char)%{$reset_color%} '
+PROMPT='$(build_prompt) $(git_prompt_info)
+$(_prompt_char)%{$reset_color%} '
 
 # Reset RPROMPT
 RPROMPT=''
