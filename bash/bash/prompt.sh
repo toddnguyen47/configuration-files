@@ -42,6 +42,9 @@ __prompt_command() {
   local space=' '
   local newline='\n'
 
+  # Add a beginning newline
+  PS1+="${newline}"
+
   # Add user@hostname
   PS1+="${fg_colors_bold[green]}\u@\h${space}"
 
