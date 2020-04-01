@@ -11,4 +11,3 @@ autoload -Uz compinit
 
 # Must be last
 compinit -i
-
