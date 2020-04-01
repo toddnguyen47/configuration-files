@@ -1,0 +1,4 @@
+set_simple_prompt() {
+  PROMPT_COMMAND=""
+  PS1="\n\w\n$ "
+}

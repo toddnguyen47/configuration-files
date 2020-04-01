@@ -13,12 +13,12 @@ cp -v bash/prompt.sh ~/.bash/prompt.sh
 
 # Add to ~/.bashrc if this line is not in there
 # Ref: https://stackoverflow.com/a/4749368
-addBashRcCommand="test -f ~/.addBashRc.sh && source ~/.addBashRc.sh"
-bashrcFile="$HOME/.bashrc"
+add_bash_rc_command="test -f ~/.addBashRc.sh && source ~/.addBashRc.sh"
+bashrc_file="$HOME/.bashrc"
 # `grep` will set the exit status `$?` to 0 if found, 1 if not found
-grep -Fxq "$addBashRcCommand" "$bashrcFile"
+grep -Fxq "$add_bash_rc_command" "$bashrc_file"
 if [[ $? -ne 0 ]] ; then
-  printf "\n%s\n\n" "$addBashRcCommand" | tee -a "$bashrcFile"
+  printf "\n%s\n\n" "$add_bash_rc_command" | tee -a "$bashrc_file"
 fi
 
 printf "Installation finished!\n"
