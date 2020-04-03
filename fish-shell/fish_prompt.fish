@@ -46,7 +46,7 @@ function fish_prompt --description 'Write out the prompt'
     set -l prompt_char "↳"
     if test $stat -gt 0
         set __fish_color_status (set_color -o red)
-        set prompt_char "✘"
+        set prompt_char "[$stat]"
     end
 
     # Set prompt
