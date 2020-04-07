@@ -1,3 +1,6 @@
+script_name="$(readlink -f $0)"
+printf "Sourcing %s\n" "${script_name}"
+
 # Autoload all functions in $HOME/.oh-my-zsh/functions
 function_folder="$HOME/.oh-my-zsh/functions"
 mkdir -p $function_folder
