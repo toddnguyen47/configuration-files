@@ -2,4 +2,4 @@
 
 alias igrep='grep --color=auto -i'
 alias lla='ls -la'
-alias rm='trash'
+alias rm2='trash'
