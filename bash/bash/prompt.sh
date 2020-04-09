@@ -28,7 +28,7 @@ fg_colors_bold[white]='\[\e[1;37m\]'
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Ref: https://stackoverflow.com/a/20026992
-print_virtualenv() {  
+print_virtualenv() {
   # Get Virtual Env
   if [[ -n "$VIRTUAL_ENV" ]]; then
     # Ref: https://linux.die.net/man/1/bash, look for `${parameter##word}`
