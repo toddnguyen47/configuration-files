@@ -24,6 +24,23 @@ fg_colors_bold[magenta]='\[\e[1;35m\]'
 fg_colors_bold[cyan]='\[\e[1;36m\]'
 fg_colors_bold[white]='\[\e[1;37m\]'
 
+# disable the default virtualenv prompt change
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Ref: https://stackoverflow.com/a/20026992
+print_virtualenv() {  
+  # Get Virtual Env
+  if [[ -n "$VIRTUAL_ENV" ]]; then
+    # Ref: https://linux.die.net/man/1/bash, look for `${parameter##word}`
+    # Strip out the path and just leave the env name
+    venv="${VIRTUAL_ENV##*/}"
+  else
+      # In case you don't have one activated
+      venv=''
+  fi
+  [[ -n "$venv" ]] && printf "%s" "(${venv}) "
+}
+
 # Ref: https://stackoverflow.com/a/16715681
 PROMPT_COMMAND=__prompt_command # Func to generate PS1 after CMDs
 
@@ -44,6 +61,9 @@ __prompt_command() {
 
   # Add a beginning newline
   PS1+="${newline}"
+
+  # Add possible virtualenv
+  PS1+="$(print_virtualenv)"
 
   # Add user@hostname
   PS1+="${fg_colors_bold[green]}\u@\h${space}"
