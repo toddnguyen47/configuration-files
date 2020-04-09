@@ -18,6 +18,20 @@ _reset_bg_fg_color() {
   printf "%s" "%{%f%b%k%}"
 }
 
+# Ref: https://stackoverflow.com/a/20026992
+_print_virtualenv() {
+  # Get Virtual Env
+  if [[ -n "$VIRTUAL_ENV" ]]; then
+    # Ref: https://linux.die.net/man/1/bash, look for `${parameter##word}`
+    # Strip out the path and just leave the env name
+    venv="${VIRTUAL_ENV##*/}"
+  else
+      # In case you don't have one activated
+      venv=''
+  fi
+  [[ -n "$venv" ]] && printf "%s" "(${venv}) "
+}
+
 _current_directory() {
   printf "%s%s" \
     "%{$fg_bold[cyan]%}" \
@@ -38,13 +52,13 @@ _current_time() {
 
 build_prompt() {
   _reset_bg_fg_color
+  _print_virtualenv
   _current_directory
   _insert_space
   _user_name
   _insert_space
   _current_time
 }
-
 
 # Reset background and foreground before building a prompt
 # NEED to use single quotes to preserve the literal value of each character!

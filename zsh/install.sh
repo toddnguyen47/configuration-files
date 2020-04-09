@@ -5,9 +5,13 @@
 # Ref: https://stackoverflow.com/a/11676016
 dir_of_this_script="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
+# Forcefully copy themes
 for zsh_theme_file in $dir_of_this_script/themes/*.zsh-theme; do
   cp -v $zsh_theme_file ~/.oh-my-zsh/custom/themes/
 done
+
+# Forcefully copy disable_virtualenv_prompt.zsh
+cp -v zsh-scripts/disable_virtualenv_prompt.zsh ~/.oh-my-zsh/custom
 
 # Copy all files in zsh-scripts to ~/.oh-my-zsh/custom
 for zsh_script in $dir_of_this_script/zsh-scripts/*.zsh; do
