@@ -1,0 +1,10 @@
+# Ref: https://github.com/ohmyzsh/ohmyzsh/issues/5700#issuecomment-311998546
+# Ref: https://github.com/ohmyzsh/ohmyzsh/issues/5700#issuecomment-312932808
+function set_title() {
+  export DISABLE_AUTO_TITLE="true"
+
+  local TITLE="\033];$*\007"
+  #local TITLE="\[\e]2;$*\a\]"
+  echo -e ${TITLE}
+}
+
