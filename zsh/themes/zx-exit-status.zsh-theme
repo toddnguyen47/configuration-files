@@ -2,9 +2,11 @@
 # Documentation here: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # Ref for root: https://askubuntu.com/a/707654
 
+# [%?]
+
 _prompt_char() {
   local cur_prompt_char="%(!.#.$)"
-  local failed_prompt_char="%(!.#.[%?])"
+  local failed_prompt_char="%(!.#.✘)"
   printf "%s%s" \
     "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
     "%(?."$cur_prompt_char"."$failed_prompt_char")"
@@ -12,6 +14,12 @@ _prompt_char() {
 
 _insert_space() {
   printf " "
+}
+
+_insert_exit_code() {
+  local failed_char="%{$fg_bold[red]%}[%?]%{$reset_color%}"
+  local exit_char="%(?..${failed_char})"
+  printf "%s" "${exit_char}"
 }
 
 _reset_bg_fg_color() {
@@ -63,7 +71,7 @@ build_prompt() {
 # Reset background and foreground before building a prompt
 # NEED to use single quotes to preserve the literal value of each character!
 # Ref: https://stackoverflow.com/a/6697781
-PROMPT='$(build_prompt) $(git_prompt_info)
+PROMPT='$(build_prompt) $(git_prompt_info) $(_insert_exit_code)
 $(_prompt_char)%{$reset_color%} '
 
 # Reset RPROMPT
