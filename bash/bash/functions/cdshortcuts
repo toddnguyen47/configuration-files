@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Ref: https://www.linuxjournal.com/content/bash-arrays
+cdshortcuts() {
+  shortcuts_arr=(
+  )
+  
+  for index in ${!shortcuts_arr[*]}; do
+    printf "%d. [ \"%s\" ]\n" "$(($index + 1))" "${shortcuts_arr[$index]}"
+  done
+}
