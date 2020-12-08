@@ -3,3 +3,4 @@ printf "Sourcing '%s'\n" "${script_name}"
 
 alias rm='trash'
 alias igrep='grep -i --color'
+alias rev-grep='grep -v grep | grep -i --color'
