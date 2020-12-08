@@ -53,7 +53,7 @@ _user_name() {
 }
 
 _current_time() {
-  printf "%s ⌚ %s" \
+  printf "%s⌚ %s" \
     %{$reset_color%} \
     "%T"
 }
@@ -71,7 +71,7 @@ build_prompt() {
 # Reset background and foreground before building a prompt
 # NEED to use single quotes to preserve the literal value of each character!
 # Ref: https://stackoverflow.com/a/6697781
-PROMPT='$(build_prompt) $(git_prompt_info) $(_insert_exit_code)
+PROMPT='$(git_prompt_info)$(build_prompt) $(_insert_exit_code)
 $(_prompt_char)%{$reset_color%} '
 
 # Reset RPROMPT
