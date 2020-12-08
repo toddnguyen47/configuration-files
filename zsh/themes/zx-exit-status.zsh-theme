@@ -41,7 +41,7 @@ _print_virtualenv() {
 }
 
 _current_directory() {
-  printf "%s%s" \
+  printf "%s[ %s ]" \
     "%{$fg_bold[cyan]%}" \
     "%~"
 }
