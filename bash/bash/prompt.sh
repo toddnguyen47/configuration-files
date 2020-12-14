@@ -49,7 +49,7 @@ __prompt_command() {
   PS1=""
 
   local promptChar="$"
-  local failedPromptChar="✘"
+  local failedPromptChar="X"
   # Check if user is root
   if [[ "$EUID" -eq 0 ]]; then
     promptChar="#"
@@ -76,13 +76,13 @@ __prompt_command() {
   PS1+="$(print_virtualenv)"
 
   # Add user@hostname
-  PS1+="${fg_colors_bold[green]}\u@\h${space}"
+  PS1+="${fg_colors_bold[green]}(\u@\h)${space}"
 
   # Add directory
-  PS1+="${fg_colors_bold[blue]}\w${space}"
+  PS1+="${fg_colors_bold[blue]}(\w)${space}"
 
   # Add time
-  PS1+="${fg_colors[default]}⌚ \A"
+  PS1+="${fg_colors[default]}(\A)"
 
   # Add prompt now!
   # If exit code failed
