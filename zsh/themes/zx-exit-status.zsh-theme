@@ -2,11 +2,12 @@
 # Documentation here: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # Ref for root: https://askubuntu.com/a/707654
 
-# [%?]
+_char_failure='✗'
+_char_clock='⌚'
 
 _prompt_char() {
   local cur_prompt_char="%(!.#.$)"
-  local failed_prompt_char="%(!.#.✘)"
+  local failed_prompt_char="%(!.#.${_char_failure})"
   printf "%s%s" \
     "%(?.%{$reset_color%}.%{$fg_bold[red]%})" \
     "%(?."$cur_prompt_char"."$failed_prompt_char")"
@@ -53,7 +54,7 @@ _user_name() {
 }
 
 _current_time() {
-  printf "%s⌚ %s" \
+  printf "%s${_char_clock} %s" \
     %{$reset_color%} \
     "%T"
 }
@@ -80,5 +81,5 @@ RPROMPT=''
 # These are copied from robbyrussell's theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[ git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=" ]%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}${_char_failure}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
