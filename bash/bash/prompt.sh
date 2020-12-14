@@ -49,7 +49,7 @@ __prompt_command() {
   PS1=""
 
   local promptChar="$"
-  local failedPromptChar="[${EXIT}] ✘"
+  local failedPromptChar="✘"
   # Check if user is root
   if [[ "$EUID" -eq 0 ]]; then
     promptChar="#"
@@ -74,15 +74,16 @@ __prompt_command() {
   # Add time
   PS1+="${fg_colors[default]}⌚ \A"
 
-  PS1+="${newline}"
-
   # Add prompt now!
+  # If exit code failed
   if [ "${EXIT}" != 0 ]; then
-    PS1+="${fg_colors_bold[red]}" # Add red if exit code non 0
+    PS1+="${fg_colors_bold[red]}" # Add red if exit code is non-0
+    # Add exit code
+    PS1+="${space}[${EXIT}]"
     promptChar="${failedPromptChar}"
   fi
+  PS1+="${newline}"
   PS1+="${promptChar}"
-
 
   # Reset color for user
   PS1+="${fg_colors[default]}${space}"
