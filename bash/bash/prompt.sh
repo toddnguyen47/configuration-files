@@ -60,7 +60,17 @@ __prompt_command() {
   local newline='\n'
 
   # Add a beginning newline
-  PS1+="${newline}"
+  # PS1+="${newline}"
+
+  # Add git branch if the command exists
+  # Ref: https://stackoverflow.com/a/677212
+  if command -v __git_ps1 &> /dev/null; then
+    local git_prompt="$(__git_ps1)"
+    # Check if git_prompt length is not 0
+    if [ ! -z ${git_prompt} ]; then
+      PS1+="${fg_colors_bold[yellow]}${git_prompt}${fg_colors_bold[default]}${space}"
+    fi
+  fi
 
   # Add possible virtualenv
   PS1+="$(print_virtualenv)"
@@ -88,4 +98,3 @@ __prompt_command() {
   # Reset color for user
   PS1+="${fg_colors[default]}${space}"
 }
-
