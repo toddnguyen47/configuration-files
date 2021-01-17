@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "editor.rulers": [80],
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    // Controls if quick suggestions should show up while typing
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    },
+
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 10,
+
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": false
+  }
+}
