@@ -1,0 +1,22 @@
+/* ref: https://friendsofepub.github.io/eBookTricks/ */
+body {
+  line-height: 1.5 !important;
+  text-align: left;
+}
+
+body * {
+  line-height: inherit;
+  text-align: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  object-fit: contain;
+}
