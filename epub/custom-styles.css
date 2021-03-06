@@ -2,13 +2,13 @@
 
 /* ref: https://friendsofepub.github.io/eBookTricks/ */
 body {
-  line-height: 1.5 !important;
+  line-height: 1.5;
   text-align: left;
 }
 
 body * {
-  line-height: inherit;
-  text-align: inherit;
+  line-height: 1.5;
+  text-align: left;
 }
 
 a {
@@ -22,3 +22,4 @@ a:hover {
 img {
   object-fit: contain;
 }
+
