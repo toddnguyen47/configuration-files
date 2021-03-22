@@ -167,7 +167,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 colorscheme desert
 
 " Set font
-set guifont=Source\ Code\ Pro\ 14
+"set guifont=Source\ Code\ Pro\ 14
 
 " Set window size
 set lines=28 columns=120
