@@ -86,7 +86,7 @@ set backspace=indent,eol,start
 
 " When opening a new line and no filetype-specific indenting is enabled, keep
 " the same indent as the line you're currently on. Useful for READMEs, etc.
-" set autoindent
+set autoindent
 
 " Stop certain movements from always going to the first character of a line.
 " While this behaviour deviates from that of Vi, it does what most users
@@ -167,8 +167,11 @@ nnoremap <C-L> :nohl<CR><C-L>
 colorscheme desert
 
 " Set font
-"set guifont=Source\ Code\ Pro\ 14
+set guifont=Hack\ 14
 
 " Set window size
 set lines=28 columns=120
+
+" Set colorcolumn for right side ruler
+set colorcolumn=100
 

@@ -162,3 +162,10 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
+
+" Set colorscheme
+colorscheme desert
+
+" Set colorcolumn
+set colorcolumn=100
+
