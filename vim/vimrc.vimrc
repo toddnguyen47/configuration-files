@@ -169,3 +169,7 @@ colorscheme desert
 " Set colorcolumn
 set colorcolumn=100
 
+" Set an underline in insert mode
+" Ref: https://stackoverflow.com/a/6489348 
+autocmd InsertEnter,InsertLeave * set cul!
+
