@@ -173,3 +173,6 @@ set colorcolumn=100
 " Ref: https://stackoverflow.com/a/6489348 
 autocmd InsertEnter,InsertLeave * set cul!
 
+" Set the CursorLine above to highlight the current row
+hi CursorLine cterm=none ctermbg=235
+
