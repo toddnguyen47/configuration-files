@@ -169,10 +169,10 @@ colorscheme desert
 " Set colorcolumn
 set colorcolumn=100
 
-" Set an underline in insert mode
+" Set CursorLine when we are in Insert Mode
 " Ref: https://stackoverflow.com/a/6489348 
 autocmd InsertEnter,InsertLeave * set cul!
 
-" Set the CursorLine above to highlight the current row
-hi CursorLine cterm=none ctermbg=235
+" Set the CursorLine none so it only highlights the current line number
+hi CursorLine cterm=none
 
