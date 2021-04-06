@@ -1,5 +1,8 @@
+#!/usr/bin/zsh
+
 gitprompt() {
   local str1='%~'
   local str2='GIT $ '
   printf "\n%s\n%s" "${str1}" "${str2}"
 }
+

@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 # Ref: https://github.com/ohmyzsh/ohmyzsh/issues/5700#issuecomment-311998546
 # Ref: https://github.com/ohmyzsh/ohmyzsh/issues/5700#issuecomment-312932808
 function set_title() {
