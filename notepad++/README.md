@@ -2,6 +2,8 @@
 
 - Macros &rarr; Start Recording
 - Search &rarr; Replace...
+- Make sure **Wrap Around** is checked.
+- Under **Search Mode**, make sure to select **Regular expression**. Uncheck **. matches newline** if it is checked.
 - In "Find What", put in
 
 ```regexp
