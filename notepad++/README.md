@@ -29,6 +29,7 @@ This will search for any lines with trailing whitespace, capture the characters 
 
 - Click on "Replace All".
 - Close the modal.
+- Click on the "END" key on your keyboard.
 - File &rarr; Save.
 - Macros &rarr; Stop Recording
 - Macros &rarr; Save Current Recorded Macro..., then give your macro a name. _OPTIONAL_: You can also give your recorded macro a keyboard shortcut. You can also assign keyboard shortcuts later by going to Settings &rarr; Shortcut Mapper, then click on the Macros tab.
