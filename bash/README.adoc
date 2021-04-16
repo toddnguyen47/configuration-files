@@ -1,0 +1,3 @@
+= Bash
+
+Simply `cd` into this directory and run `./install.sh`
