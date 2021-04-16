@@ -1,37 +1,39 @@
-# Lua Setup
+= Lua Setup
+:nofooter:
 
-The setup that we are currently using for Lua. These scripts will compile [LuaFormatter](https://github.com/Koihik/LuaFormatter) and use it as our main Lua autoformatter in [Visual Studio Code](https://code.visualstudio.com/).
+The setup that we are currently using for Lua. These scripts will compile https://github.com/Koihik/LuaFormatter[LuaFormatter] and use it as our main Lua autoformatter in https://code.visualstudio.com/[Visual Studio Code].
 
-# Compile LuaFormatter
+== Compile LuaFormatter
 
-## Ubuntu/Debian only: Install gcc that is compatible with C++ 17
+=== Ubuntu/Debian only: Install gcc that is compatible with C++ 17
 
 - Run the script `00_ubuntuInstallGcc9.sh` with `sudo -E`, which preserves the environment variables
 
-```
+[source, bash]
+----
 $ chmod +x 00_ubuntuInstallGcc9.sh
 $ sudo -E ./00_ubuntuInstallGcc9.sh
-```
+----
 
-## Time to compile LuaFormatter
+=== Time to compile LuaFormatter
 
-- Run the script `01_installLuaFormatter.sh` to clone and install [LuaFormatter](https://github.com/Koihik/LuaFormatter).
-- `LuaFormatter`, along with the configuration file `config.luaformatter` found in this directory,
-  will be installed to `$HOME/opt/LuaFormatter`
+- Run the script `01_installLuaFormatter.sh` to clone and install https://github.com/Koihik/LuaFormatter[LuaFormatter].
+- `LuaFormatter`, along with the configuration file `config.luaformatter` found in this directory, will be installed to `$HOME/opt/LuaFormatter`
 
-```
+[source, bash]
+----
 $ chmod +x 01_installLuaFormatter.sh
 $ ./01_installLuaFormatter.sh
-```
+----
 
-# Extensions
+== Extensions
 
 The extensions we are using:
 
 - `Lua` by `sumneko`. Link: https://marketplace.visualstudio.com/items?itemName=sumneko.lua
 - `vscode-lua-format` by `Koihik`. Link: https://github.com/Koihik/vscode-lua-format
 
-## Extension Configuration
+=== Extension Configuration
 
 - When you executed `01_installLuaFormatter.sh`, it will also generate some settings and output it to a file called `settings_to_append.json`
 - Open `settings_to_append.json` in our current directory and copy everything between the two braces, `{` on line 1 and its matching `}`. 
@@ -43,7 +45,7 @@ The extensions we are using:
   `settings.json` file.
 - You should be set!
 
-# Questions? Concerns?
+== Questions? Concerns?
 
 Email me at todd.nguyen47@gmail.com !
 
