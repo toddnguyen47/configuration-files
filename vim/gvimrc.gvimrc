@@ -166,12 +166,28 @@ nnoremap <C-L> :nohl<CR><C-L>
 " Set colorscheme
 colorscheme desert
 
+" View tabs and spaces
+set encoding=utf-8
+set listchars=tab:»\ ,trail:·,precedes:‹,extends:›
+set list
+
 " Set font
-set guifont=Hack\ 14
+if has("gui_running")
+  if has("gui_gtk2") || has("gui_gtk3")
+    set guifont=Source\ Code\ Pro\ 12
+  elseif has("gui_photon")
+    set guifont=Source\ Code\ Pro:s12
+  elseif has("gui_kde")
+    set guifont=Source\ Code\ Pro/12/-1/5/50/0/0/0/1/0
+  elseif has("x11")
+    set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
+  else
+    set guifont=Source_Code_Pro:h12:cDEFAULT
+  endif
+endif
 
 " Set window size
-set lines=28 columns=120
+set lines=30 columns=120
 
 " Set colorcolumn for right side ruler
 set colorcolumn=100
-

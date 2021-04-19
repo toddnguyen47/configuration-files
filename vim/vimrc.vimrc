@@ -166,6 +166,11 @@ nnoremap <C-L> :nohl<CR><C-L>
 " Set colorscheme
 colorscheme desert
 
+" View tabs and spaces
+set encoding=utf-8
+set listchars=tab:»\ ,trail:·,precedes:‹,extends:›
+set list
+
 " Set colorcolumn
 set colorcolumn=100
 
