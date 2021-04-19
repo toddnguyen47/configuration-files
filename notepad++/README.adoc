@@ -8,7 +8,6 @@
 * Under **Search Mode**, make sure to select **Regular expression**. Uncheck **. matches newline** if it is checked.
 * In "Find What", put in
 
-.Find lines that only consist of spaces and tabs
 ----
 ^[ \t]+$
 ----
@@ -18,14 +17,12 @@ In "Replace with", put in nothing. This will remove any lines with only spaces a
 * Click on "Replace All".
 * In "Find What", put in
 
-.Capture all text that precedes any excess spaces and tabs on the right
 ----
 ^([\S \t]*\S)[ \t]+$
 ----
 
 In "Replace with", put in
 
-.Replace with first capture group
 ----
 \1
 ----
