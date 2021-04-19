@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Fira Mono', 'Hack', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 15,
   "terminal.integrated.fontSize": 15,
   "editor.insertSpaces": true,
