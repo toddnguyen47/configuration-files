@@ -41,10 +41,14 @@ _print_virtualenv() {
   [[ -n "$venv" ]] && printf "%s" "(${venv}) "
 }
 
+# Ref: https://unix.stackexchange.com/a/273567
 _current_directory() {
+  let max_num_paths=3
+  let total_len=${max_num_paths}+2
+  let remaining_len=${total_len}-1
   printf "%s[ %s ]" \
     "%{$fg_bold[cyan]%}" \
-    "%~"
+    "%(${total_len}~|%-1~/.../%${max_num_paths}~|%${remaining_len}~)"
 }
 
 _user_name() {
