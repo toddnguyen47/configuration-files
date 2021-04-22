@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-PROMPT_005fDIRTRIM-226
+export PROMPT_DIRTRIM=3 
+
 # Ref: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 # Use an associated array (hash table) for colors
 declare -A fg_colors
