@@ -51,7 +51,7 @@ __prompt_command() {
   local EXIT="$?" # This needs to be first
   PS1=""
 
-  local promptChar="↳"
+  local promptChar="$"
   local failedPromptChar="✘"
   # Check if user is root
   if [[ "$EUID" -eq 0 ]]; then
