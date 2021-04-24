@@ -1,1 +1,1 @@
-See <<hotkeys.adoc, hotkeys>>
+See xref:hotkeys.adoc[hotkeys]

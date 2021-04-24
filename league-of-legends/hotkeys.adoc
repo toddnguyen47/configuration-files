@@ -2,7 +2,6 @@
 
 ALl regular spells quick cast. All regular spells + Shift = normal cast.
 
-.Table League of Legends Changed Hotkeys
 |===
 | Key | Description
 
