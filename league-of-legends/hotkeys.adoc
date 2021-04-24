@@ -1,0 +1,17 @@
+= League of Legends Hotkeys
+
+ALl regular spells quick cast. All regular spells + Shift = normal cast.
+
+.Table League of Legends Changed Hotkeys
+|===
+| Key | Description
+
+| T | Item 4
+| Shift + T | Item 4 Normal Cast
+| H | Item 6
+| Shift + H | Item 6 Normal Cast
+| Y | Hold Position
+| 6 | Spell 3 Self + Quick Cast 
+| ~ | Show Advanced Player Statistics
+| C | Center Champion
+| Space | Target Champion Only
