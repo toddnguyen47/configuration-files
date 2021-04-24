@@ -1,6 +1,6 @@
 = League of Legends Hotkeys
 
-ALl regular spells quick cast. All regular spells + Shift = normal cast.
+All regular spells quick cast. All regular spells + Shift = normal cast.
 
 |===
 | Key | Description
