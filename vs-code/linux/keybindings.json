@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+0",
+    "command": "extension.jumpy-exit"
+  },
+  {
+    "key": "ctrl+shift+9",
+    "command": "extension.jumpy-word"
+  }
+]

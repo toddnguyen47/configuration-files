@@ -1,17 +1,17 @@
 {
   "editor.fontFamily": "'Fira Mono', 'Hack', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.fontSize": 15,
-  "terminal.integrated.fontSize": 15,
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [
-    100
-  ],
-  "window.zoomLevel": 0.5,
+  "editor.rulers": [100],
   "editor.formatOnSave": true,
   "workbench.iconTheme": "simple-icons",
-  "workbench.colorTheme": "One Monokai"
+  "workbench.colorTheme": "One Monokai",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.eol": "\n"
 }
-
