@@ -2,6 +2,9 @@
 
 VSCode settings so you don't have to sync them every time.
 
+== Extensions
+It's better to use VSCode's built-in sync settings to sync extensions.
+
 == Directories
 
 For `settings.json` and `keybindings.json`:
