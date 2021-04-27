@@ -8,10 +8,12 @@ It's better to use VSCode's built-in sync settings to sync extensions.
 == Directories
 
 For `settings.json` and `keybindings.json`:
+
 * `~/.config/Code/User` for Linux
 * `C:\Users\username\AppData\Roaming\Code\User` for Windows
 
 For `extensions`:
+
 * `~/.vscode/extensions` for Linux
 * `%APPDATA%\Code, %USERPROFILE%\.vscode\extensions` for Windows
 
