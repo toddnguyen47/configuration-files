@@ -13,10 +13,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.eol": "\n",
-  "[css]": {
-    "editor.suggest.insertMode": "replace",
-    "editor.formatOnSave": false
-  }
+  "files.eol": "\n"
 }
 
