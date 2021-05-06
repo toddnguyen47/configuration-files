@@ -5,12 +5,14 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 |===
 | Key | Description
 
-| T | Item 4
-| Shift + T | Item 4 Normal Cast
+| T | Item 1
+| Shift + T | Item 1 Normal Cast
+| 1 | Item 4
+| Shift + 1 | Item 4 Normal Cast
 | H | Item 6
 | Shift + H | Item 6 Normal Cast
 | Y | Hold Position
-| 6 | Spell 3 Self + Quick Cast 
+| 6 | Spell 3 Self + Quick Cast
 | ~ | Show Advanced Player Statistics
 | C | Center Champion
 | Space | Target Champion Only
