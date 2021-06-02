@@ -4,5 +4,7 @@ To install:
 
 . Install https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim[plug.vim] to `$HOME/.vim/autoload`
 . Copy `vimrc.vimrc` and `gvimrc.gvimrc` go `$HOME/.vimrc` and `$HOME/.gvimrc` respectively
+. Exit vim and then reopen vim
+. Run the command `:PlugInstall`. Plugins should be installed. To check, run `:History` (with a capital H). If that does not work, restart vim and try the `:History` command again.
 . You should be all set!
 
