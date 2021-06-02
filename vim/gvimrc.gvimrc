@@ -191,3 +191,22 @@ set lines=30 columns=120
 
 " Set colorcolumn for right side ruler
 set colorcolumn=100
+
+" #STARTREGION
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+" Run with `:PlugInstall`
+call plug#begin('~/.vim/plugged')
+
+" Use fzf
+Plug '/usr/local/bin/fzf'
+
+" Install fzf.vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" Finish initializing plugin system
+call plug#end()
+" #ENDREGION
+

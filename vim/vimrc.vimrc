@@ -181,3 +181,21 @@ autocmd InsertEnter,InsertLeave * set cul!
 " Set the CursorLine none so it only highlights the current line number
 hi CursorLine cterm=none
 
+" #STARTREGION
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+" Run with `:PlugInstall`
+call plug#begin('~/.vim/plugged')
+
+" Use fzf
+Plug '/usr/local/bin/fzf'
+
+" Install fzf.vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" Finish initializing plugin system
+call plug#end()
+" #ENDREGION
+
