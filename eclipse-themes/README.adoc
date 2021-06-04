@@ -1,0 +1,7 @@
+= Eclipse Themes
+
+Original themes can be found here:
+
+* Obsidian: http://www.eclipsecolorthemes.org/?view=theme&id=21
+* Sunburst: http://www.eclipsecolorthemes.org/?view=theme&id=383
+
