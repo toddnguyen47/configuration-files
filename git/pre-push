@@ -1,0 +1,14 @@
+set -euxo pipefail
+
+# Ref: https://stackoverflow.com/a/957978/6323360
+# Change to git root dir
+git_root_dir="$(git rev-parse --show-toplevel)"
+pushd ${git_root_dir} > /dev/null
+
+# Run tests / do whatever / etc.
+mvn clean verify
+
+# Clean up
+popd > /dev/null
+exit 0
+
