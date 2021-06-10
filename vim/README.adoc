@@ -1,4 +1,8 @@
 = Vim Configurations
+:toc: auto
+
+
+== Install Vim plugins
 
 To install:
 
@@ -7,4 +11,40 @@ To install:
 . Exit vim and then reopen vim
 . Run the command `:PlugInstall`. Plugins should be installed. To check, run `:History` (with a capital H). If that does not work, restart vim and try the `:History` command again.
 . You should be all set!
+
+== Runtime Configuration
+
+The tree folder directory looks like so:
+
+[source, bash]
+----
+.
+├── after
+│   └── ftplugin
+├── autoload
+├── ftdetect
+└── plugged
+    ├── fzf
+    │   ├── bin
+    │   ├── doc
+    │   ├── man
+    │   │   └── man1
+    │   ├── plugin
+    │   ├── shell
+    │   ├── src
+    │   │   ├── algo
+    │   │   ├── protector
+    │   │   ├── tui
+    │   │   └── util
+    │   └── test
+    └── fzf.vim
+        ├── autoload
+        │   └── fzf
+        │       └── vim
+        ├── bin
+        ├── doc
+        └── plugin
+----
+
+You can find out more by typing in `:h runtimepath`.
 
