@@ -17,6 +17,7 @@
   },
   "files.eol": "\n",
   "[go]": {
-    "editor.insertSpaces": false
-  }
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
 }
