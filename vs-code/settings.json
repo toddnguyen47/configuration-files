@@ -10,7 +10,8 @@
   "editor.rulers": [100],
   "editor.formatOnSave": true,
   "workbench.iconTheme": "simple-icons",
-  "workbench.colorTheme": "One Monokai",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.tree.indent": 12,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
