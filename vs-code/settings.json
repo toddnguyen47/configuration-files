@@ -16,6 +16,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.eol": "\n",
+  "[python]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 4
+  },
   "[go]": {
     "editor.insertSpaces": false,
     "editor.tabSize": 4
