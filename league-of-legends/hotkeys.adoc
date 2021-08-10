@@ -3,11 +3,14 @@
 All regular spells quick cast. All regular spells + Shift = normal cast.
 
 .Abilities and Summoner Spells
+[options="header"]
 |===
+| Key | Description
 | Target Champions Only | Space
 |===
 
 .Items
+[options="header"]
 |===
 | Key | Description
 | T | Item 1
@@ -27,6 +30,7 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 |===
 
 .Player Movement
+[options="header"]
 |===
 | Key | Description
 | Player Attack Move Click | A
@@ -34,6 +38,7 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 |===
 
 .Camera Control
+[options="header"]
 |===
 | Key | Description
 | Center Camera on Champion | C
@@ -45,6 +50,7 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 |===
 
 .Communication
+[options="header"]
 |===
 | Key | Description
 | Area is Warded Ping | N
@@ -53,7 +59,9 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 |===
 
 .Menus
+[options="header"]
 |===
+| Key | Description
 | Show Advanced Player Stats | `
 | Toggle Basic Player Stats | Ctrl + C
 |===
