@@ -2,7 +2,9 @@
 
 Simply run `./install.sh` and you're good to go!
 
-== Check if ZSH theme is set; if it is not, set it to random
+== Check if `ZSH_THEME` is set
+
+If `ZSH_THEME` is not set, set it to random.
 
 [source, shell]
 ----
