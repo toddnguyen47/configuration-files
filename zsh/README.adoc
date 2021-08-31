@@ -1,3 +1,13 @@
 = zsh config files
 
 Simply run `./install.sh` and you're good to go!
+
+== Check if ZSH theme is set; if it is not, set it to random
+
+[source, shell]
+----
+_STR_RANDOM="random"
+if [[ ! -v ZSH_THEME || "${ZSH_THEME}" == "${_STR_RANDOM}" ]]; then
+  ZSH_THEME="${_STR_RANDOM}"
+fi
+----
