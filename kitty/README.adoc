@@ -1,0 +1,5 @@
+= kitty.conf
+
+* Themes: https://github.com/dexpota/kitty-themes
+* Theme I'm currently using: Pnevma
+
