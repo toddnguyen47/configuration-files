@@ -1,30 +1,15 @@
-const terser = require('terser');
+const {exec} = require('child_process');
 const fs = require('fs');
 
-const _options = {
-  parse: {
-    // parse options
-  },
-  compress: {
-    // compress options
-  },
-  mangle: {
-    // mangle options
-
-    properties: {
-      // mangle property options
-    },
-  },
-  format: {
-    // format options (can also use `output` for backwards compatibility)
-  },
-  sourceMap: {
-    // source map options
-  },
-  ecma: 6, // specify one of: 5, 2015, 2016, etc.
-  module: true,
-};
-
+// Ref: https://www.npmjs.com/package/terser
+// Comma separated list of compress options. NO SPACES
+const _compressOptions = 'defaults=true,arrows=true';
+// Comma separated list of mangle options. NO SPACES
+const _mangleOptions = '';
+const _terserCommand =
+  './node_modules/terser/bin/terser ' +
+  `--compress ${_compressOptions} ` +
+  `--mangle ${_mangleOptions} `;
 const _dirPath = 'build/default/src';
 
 /**
@@ -67,13 +52,17 @@ function dive(dirPath, action) {
 }
 
 /**
- * @param {String} file
+ * @param {String} file Fullpath to file
  */
 async function actionPerFile(file) {
   if (file.endsWith('js')) {
-    console.info('File: ' + file);
-    const result = await terser.minify(file, _options);
-    console.debug(result);
+    const command = _terserCommand + '--output ' + file + ' -- ' + file;
+    console.info('Command: ' + command);
+    exec(command, (err1, _stdout, _stderr) => {
+      if (err1) {
+        console.error(`error: ${err1}`);
+      }
+    });
   }
 }
 
