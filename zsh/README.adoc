@@ -15,3 +15,12 @@ else
 fi
 ----
 
+To use the above code, type these commands into your terminal:
+
+[source, shell]
+----
+# Use your choice of theme to replace `zx-exit-status`
+export ZSH_THEME_OVERRIDE="zx-exit-status"
+source ~/.zshrc
+----
+
