@@ -7,13 +7,21 @@
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [100],
+  "editor.rulers": [120],
   "editor.formatOnSave": true,
   "workbench.iconTheme": "simple-icons",
-  "workbench.colorTheme": "One Monokai",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.tree.indent": 12,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "[python]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 4
+  },
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
 }
-

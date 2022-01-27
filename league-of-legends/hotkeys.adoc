@@ -2,17 +2,66 @@
 
 All regular spells quick cast. All regular spells + Shift = normal cast.
 
+.Abilities and Summoner Spells
+[options="header"]
 |===
 | Key | Description
+| Target Champions Only | Space
+|===
 
+.Items
+[options="header"]
+|===
+| Key | Description
 | T | Item 1
-| Shift + T | Item 1 Normal Cast
-| 1 | Item 4
-| Shift + 1 | Item 4 Normal Cast
+| 2 | Item 2
+| 3 | Item 3
+| 4 | Trinket
+| 5 | Item 5
 | H | Item 6
+| X | Item 7
+| Shift + T | Item 1 Normal Cast
+| Shift + 2 | Item 2 Normal Cast
+| Shift + 3 | Item 4 Normal Cast
+| Shift + 4 | Trinket Normal Cast
+| Shift + 5 | Item 5 Normal Cast
 | Shift + H | Item 6 Normal Cast
-| Y | Hold Position
-| 6 | Spell 3 Self + Quick Cast
-| ~ | Show Advanced Player Statistics
-| C | Center Champion
-| Space | Target Champion Only
+| Shift + X | Item 7 Normal Cast
+|===
+
+.Player Movement
+[options="header"]
+|===
+| Key | Description
+| Player Attack Move Click | A
+| Player Attack Move | 1
+|===
+
+.Camera Control
+[options="header"]
+|===
+| Key | Description
+| Center Camera on Champion | C
+| Select Self | F5
+| Select Ally 1 | F1
+| Select Ally 2 | F2
+| Select Ally 3 | F3
+| Select Ally 4 | F4
+|===
+
+.Communication
+[options="header"]
+|===
+| Key | Description
+| Area is Warded Ping | N
+| Chat History | Z
+| Open Instant Emote Wheel | Ctrl + 6
+|===
+
+.Menus
+[options="header"]
+|===
+| Key | Description
+| Show Advanced Player Stats | `
+| Toggle Basic Player Stats | Ctrl + C
+|===
