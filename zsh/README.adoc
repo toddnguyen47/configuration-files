@@ -1,3 +1,17 @@
 = zsh config files
 
 Simply run `./install.sh` and you're good to go!
+
+== Add an override to `ZSH_THEME`
+
+To have a possible override, add the following to your `.zshrc`
+
+[source, shell]
+----
+if [[ -n ${ZSH_THEME_OVERRIDE} ]]; then
+    ZSH_THEME="${ZSH_THEME_OVERRIDE}"
+else
+    ZSH_THEME="random"
+fi
+----
+
