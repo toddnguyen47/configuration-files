@@ -24,3 +24,21 @@ export ZSH_THEME_OVERRIDE="zx-exit-status"
 source ~/.zshrc
 ----
 
+== Override RPROMPT and append $ to LPROMPT
+
+Add the below line to `~/.zshrc`
+
+[source, shell]
+----
+# Reset RPROMPT
+RPROMPT=''
+
+# Add $ to PROMPT
+_add_dollar_sign() {
+    printf "%s$%s " \
+        "%{$fg_bold[yellow]%}" \
+        "%{$reset_color%}"
+}
+PROMPT+='
+$(_add_dollar_sign)'
+----
