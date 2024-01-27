@@ -6,6 +6,7 @@ Various fonts that I have used.
 - [Fonts](#fonts)
 - [Table of Contents](#table-of-contents)
   - [Sans-serif](#sans-serif)
+  - [Sans-serif Narrow](#sans-serif-narrow)
   - [Serif](#serif)
   - [Monospace](#monospace)
 
@@ -16,6 +17,12 @@ Various fonts that I have used.
 - Open Sans: https://fonts.google.com/specimen/Open+Sans?query=open+sans
 - PT Sans: https://fonts.google.com/specimen/PT+Sans?query=pt+sans
   - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans
+
+## Sans-serif Narrow
+
+- Asap Condensed: https://fonts.google.com/specimen/Asap+Condensed/about?query=condensed
+- Saira Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
+- PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow/about?query=narrow
 
 ## Serif
 
