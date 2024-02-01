@@ -13,6 +13,7 @@ Various fonts that I have used.
 ## Sans-serif
 
 - Be Vietnam Pro: https://fonts.google.com/specimen/Be+Vietnam+Pro?query=be+vietnam+pro
+- Sofia Sans: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
 - Lato: https://fonts.google.com/specimen/Lato/about?query=lato
 - Open Sans: https://fonts.google.com/specimen/Open+Sans?query=open+sans
 - PT Sans: https://fonts.google.com/specimen/PT+Sans?query=pt+sans
@@ -22,6 +23,7 @@ Various fonts that I have used.
 ## Sans-serif Narrow
 
 - Asap Condensed: https://fonts.google.com/specimen/Asap+Condensed/about?query=condensed
+- Sofia Sans Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
 - Saira Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
 - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow/about?query=narrow
 
