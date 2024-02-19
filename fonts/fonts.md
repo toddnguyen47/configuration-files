@@ -23,7 +23,7 @@ Various fonts that I have used.
 ## Sans-serif Narrow
 
 - Asap Condensed: https://fonts.google.com/specimen/Asap+Condensed/about?query=condensed
-- Sofia Sans Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
+- Sofia Sans Condensed: https://fonts.google.com/specimen/Sofia+Sans+Condensed?query=sofia+sans+condense
 - Saira Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
 - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow/about?query=narrow
 
