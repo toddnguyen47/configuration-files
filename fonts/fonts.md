@@ -25,6 +25,7 @@ Various fonts that I have used.
 - Asap Condensed: https://fonts.google.com/specimen/Asap+Condensed/about?query=condensed
 - Sofia Sans Condensed: https://fonts.google.com/specimen/Sofia+Sans+Condensed?query=sofia+sans+condense
 - Saira Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
+- Fira Sans Extra Condensed: https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed?query=fira+sans+extra
 - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow/about?query=narrow
 
 ## Serif
