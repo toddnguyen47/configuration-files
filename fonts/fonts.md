@@ -42,3 +42,4 @@ Various fonts that I have used.
 - Fira Code: https://github.com/tonsky/FiraCode
 - Share Tech Mono: https://fonts.google.com/specimen/Share+Tech+Mono/about?preview.size=14&classification=Monospace&sort=popularity
 - Oxygen Mono: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
+- Cascadia: https://github.com/microsoft/cascadia-code
