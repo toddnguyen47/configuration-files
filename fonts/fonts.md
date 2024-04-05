@@ -9,6 +9,7 @@ Various fonts that I have used.
   - [Sans-serif Narrow](#sans-serif-narrow)
   - [Serif](#serif)
   - [Monospace](#monospace)
+  - [Handwriting](#handwriting)
 
 ## Sans-serif
 
@@ -43,3 +44,7 @@ Various fonts that I have used.
 - Share Tech Mono: https://fonts.google.com/specimen/Share+Tech+Mono/about?preview.size=14&classification=Monospace&sort=popularity
 - Oxygen Mono: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
 - Cascadia: https://github.com/microsoft/cascadia-code
+
+## Handwriting
+
+- Kaushan Script: https://fonts.google.com/specimen/Kaushan+Script?preview.text=Once%20per%20turn&classification=Handwriting
