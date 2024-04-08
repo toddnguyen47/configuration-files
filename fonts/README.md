@@ -31,11 +31,15 @@ Various fonts that I have used.
 
 ## Serif
 
-- Spectral: https://fonts.google.com/specimen/Spectral
 - Zilla Slab: https://fonts.google.com/specimen/Zilla+Slab
 - Crimson Text: https://fonts.google.com/specimen/Crimson+Text
 - Domine: https://fonts.google.com/specimen/Domine?query=domine
+- PT Serif: https://fonts.google.com/specimen/PT+Serif/about
 - Lora: https://fonts.google.com/specimen/Lora?query=lora
+
+Captions only
+
+- Spectral: https://fonts.google.com/specimen/Spectral
 
 ## Monospace
 
