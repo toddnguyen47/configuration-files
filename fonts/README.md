@@ -19,7 +19,7 @@ Various fonts that I have used.
 - Open Sans: https://fonts.google.com/specimen/Open+Sans?query=open+sans
 - PT Sans: https://fonts.google.com/specimen/PT+Sans?query=pt+sans
   - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans
-- Oxygen: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
+- Oxygen: https://fonts.google.com/specimen/Oxygen?query=oxygen
 
 ## Sans-serif Narrow
 
