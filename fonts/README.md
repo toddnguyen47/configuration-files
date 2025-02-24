@@ -20,6 +20,7 @@ Various fonts that I have used.
 - PT Sans: https://fonts.google.com/specimen/PT+Sans?query=pt+sans
   - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans
 - Oxygen: https://fonts.google.com/specimen/Oxygen?query=oxygen
+- Lexend: https://fonts.google.com/specimen/Lexend
 
 ## Sans-serif Narrow
 
