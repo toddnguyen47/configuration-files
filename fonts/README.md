@@ -45,6 +45,7 @@ Captions only
 ## Monospace
 
 - JuliaMono: https://juliamono.netlify.app/
+- Agave: https://github.com/blobject/agave
 - Fira Code: https://github.com/tonsky/FiraCode
 - Share Tech Mono: https://fonts.google.com/specimen/Share+Tech+Mono/about?preview.size=14&classification=Monospace&sort=popularity
 - Oxygen Mono: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
