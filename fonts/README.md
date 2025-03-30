@@ -4,12 +4,16 @@ Various fonts that I have used.
 
 # Table of Contents
 - [Fonts](#fonts)
+- [Alternatives](#alternatives)
 - [Table of Contents](#table-of-contents)
   - [Sans-serif](#sans-serif)
   - [Sans-serif Narrow](#sans-serif-narrow)
   - [Serif](#serif)
   - [Monospace](#monospace)
   - [Handwriting](#handwriting)
+ 
+## Alternatives
+https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_replacements/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
 ## Sans-serif
 
