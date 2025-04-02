@@ -12,7 +12,7 @@ Various fonts that I have used.
   - [Monospace](#monospace)
   - [Handwriting](#handwriting)
  
-## Alternatives
+## Popular Font Alternatives
 https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_replacements/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
 ## Sans-serif
@@ -25,6 +25,7 @@ https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_r
   - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans
 - Oxygen: https://fonts.google.com/specimen/Oxygen?query=oxygen
 - Lexend: https://fonts.google.com/specimen/Lexend
+- Inter: https://github.com/rsms/inter
 
 ## Sans-serif Narrow
 
