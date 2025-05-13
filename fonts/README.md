@@ -58,4 +58,5 @@ Captions only
 
 ## Handwriting
 
-- Kaushan Script: https://fonts.google.com/specimen/Kaushan+Script?preview.text=Once%20per%20turn&classification=Handwriting
+- Kaushan Script: https://fonts.google.com/specimen/Kaushan+Script
+- Felipa: https://fonts.google.com/specimen/Felipa
