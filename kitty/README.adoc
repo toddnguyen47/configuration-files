@@ -1,5 +1,13 @@
-= kitty.conf
+= NEW as of 2025-05-23
+
+`kitten theme` that I like:
+
+* Tokyo Night Moon
+* Sakura Night
+
+---
+
+= OLD as of 2025-05-23
 
 * Themes: https://github.com/dexpota/kitty-themes
 * Theme I'm currently using: Pnevma
-
