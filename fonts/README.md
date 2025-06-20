@@ -1,62 +1,71 @@
 # Fonts
 
-Various fonts that I have used.
+Various fonts I have used.
 
 # Table of Contents
 - [Fonts](#fonts)
-- [Alternatives](#alternatives)
 - [Table of Contents](#table-of-contents)
+  - [Popular Font Alternatives](#popular-font-alternatives)
   - [Sans-serif](#sans-serif)
   - [Sans-serif Narrow](#sans-serif-narrow)
   - [Serif](#serif)
   - [Monospace](#monospace)
   - [Handwriting](#handwriting)
- 
+
+---
+
 ## Popular Font Alternatives
-https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_replacements/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+[Reddit Thread – Open Source Core Font Replacements](https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_replacements/)
+
+---
 
 ## Sans-serif
 
-- Be Vietnam Pro: https://fonts.google.com/specimen/Be+Vietnam+Pro?query=be+vietnam+pro
-- Sofia Sans: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
-- Lato: https://fonts.google.com/specimen/Lato/about?query=lato
-- Open Sans: https://fonts.google.com/specimen/Open+Sans?query=open+sans
-- PT Sans: https://fonts.google.com/specimen/PT+Sans?query=pt+sans
-  - PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow?query=pt+sans
-- Oxygen: https://fonts.google.com/specimen/Oxygen?query=oxygen
-- Lexend: https://fonts.google.com/specimen/Lexend
-- Inter: https://github.com/rsms/inter
+- [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
+- [Sofia Sans](https://fonts.google.com/specimen/Sofia+Sans)
+- [Lato](https://fonts.google.com/specimen/Lato)
+- [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- [PT Sans](https://fonts.google.com/specimen/PT+Sans)
+- [Oxygen](https://fonts.google.com/specimen/Oxygen)
+- [Lexend](https://fonts.google.com/specimen/Lexend)
+- [Inter](https://github.com/rsms/inter)
+
+---
 
 ## Sans-serif Narrow
 
-- Asap Condensed: https://fonts.google.com/specimen/Asap+Condensed/about?query=condensed
-- Sofia Sans Condensed: https://fonts.google.com/specimen/Sofia+Sans+Condensed?query=sofia+sans+condense
-- Saira Condensed: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
-- Fira Sans Extra Condensed: https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed?query=fira+sans+extra
-- PT Sans Narrow: https://fonts.google.com/specimen/PT+Sans+Narrow/about?query=narrow
+- [Asap Condensed](https://fonts.google.com/specimen/Asap+Condensed)
+- [Sofia Sans Condensed](https://fonts.google.com/specimen/Sofia+Sans+Condensed)
+- [Saira Condensed](https://fonts.google.com/specimen/Saira+Condensed)
+- [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed)
+- [PT Sans Narrow](https://fonts.google.com/specimen/PT+Sans+Narrow)
+
+---
 
 ## Serif
 
-- Zilla Slab: https://fonts.google.com/specimen/Zilla+Slab
-- Crimson Text: https://fonts.google.com/specimen/Crimson+Text
-- Domine: https://fonts.google.com/specimen/Domine?query=domine
-- PT Serif: https://fonts.google.com/specimen/PT+Serif/about
-- Lora: https://fonts.google.com/specimen/Lora?query=lora
+- [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab)
+- [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
+- [Domine](https://fonts.google.com/specimen/Domine)
+- [PT Serif](https://fonts.google.com/specimen/PT+Serif)
+- [Lora](https://fonts.google.com/specimen/Lora)
+- [Spectral (Captions Only)](https://fonts.google.com/specimen/Spectral)
 
-Captions only
-
-- Spectral: https://fonts.google.com/specimen/Spectral
+---
 
 ## Monospace
 
-- JuliaMono: https://juliamono.netlify.app/
-- Agave: https://github.com/blobject/agave
-- Fira Code: https://github.com/tonsky/FiraCode
-- Share Tech Mono: https://fonts.google.com/specimen/Share+Tech+Mono/about?preview.size=14&classification=Monospace&sort=popularity
-- Oxygen Mono: https://fonts.google.com/specimen/Saira+Condensed?query=condensed
-- Cascadia: https://github.com/microsoft/cascadia-code
+- [JuliaMono](https://juliamono.netlify.app/)
+- [Agave](https://github.com/blobject/agave)
+- [Victor Mono](https://fonts.google.com/specimen/Victor+Mono)
+- [Fira Code](https://github.com/tonsky/FiraCode)
+- [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)
+- [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono)
+- [Cascadia Code](https://github.com/microsoft/cascadia-code)
+
+---
 
 ## Handwriting
 
-- Kaushan Script: https://fonts.google.com/specimen/Kaushan+Script
-- Felipa: https://fonts.google.com/specimen/Felipa
+- [Kaushan Script](https://fonts.google.com/specimen/Kaushan+Script)
+- [Felipa](https://fonts.google.com/specimen/Felipa)
