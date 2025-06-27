@@ -2,6 +2,7 @@
 
 ## Themes
 
+- Nightfall
 - Vuesion
 - Gradianto
 - One Dark
