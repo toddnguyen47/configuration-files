@@ -46,6 +46,7 @@ Various fonts I have used.
 
 - [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab)
 - [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
+- [Kreon - Slay the Spire font](https://fonts.google.com/specimen/Kreon)
 - [Domine](https://fonts.google.com/specimen/Domine)
 - [PT Serif](https://fonts.google.com/specimen/PT+Serif)
 - [Lora](https://fonts.google.com/specimen/Lora)
