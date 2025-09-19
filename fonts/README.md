@@ -58,10 +58,11 @@ Various fonts I have used.
 
 - [JuliaMono](https://juliamono.netlify.app/)
 - [Agave](https://github.com/blobject/agave)
-- [0xProto](https://github.com/0xType/0xProto)
-- [Fira Code](https://github.com/tonsky/FiraCode)
-- [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)
 - [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono)
+- [Spline Sans Mono](https://github.com/SorkinType/SplineSansMono)
+- [0xProto](https://github.com/0xType/0xProto)
+- [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)
+- [Fira Code](https://github.com/tonsky/FiraCode)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
 ---
