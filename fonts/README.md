@@ -22,6 +22,7 @@ Various fonts I have used.
 ## Sans-serif
 
 - [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
+- [Spline Sans](https://fonts.google.com/specimen/Spline+Sans)
 - [Sofia Sans](https://fonts.google.com/specimen/Sofia+Sans)
 - [Lato](https://fonts.google.com/specimen/Lato)
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans)
