@@ -2,7 +2,12 @@
 
 `kitten theme` that I like:
 
+* srcery
+* spaceduck
 * Tokyo Night Moon
+
+Fun Themes
+
 * Sakura Night
 
 ---

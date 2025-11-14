@@ -40,5 +40,20 @@ _add_dollar_sign() {
         "%{$reset_color%}"
 }
 PROMPT+='
+[$(strftime "%a %Y-%m-%d %H:%M")]
 $(_add_dollar_sign)'
+----
+
+== Plugins
+
+Plugis that I like to use. Add these in `~/.zshrc`
+
+[source, shell]
+----
+plugins=(
+  git
+  poetry
+  z
+  zsh-syntax-highlighting
+)
 ----
