@@ -45,6 +45,7 @@ Various fonts I have used.
 
 ## Serif
 
+- [Donegal One](https://fonts.google.com/specimen/Donegal+One)
 - [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab)
 - [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
 - [Kreon - Slay the Spire font](https://fonts.google.com/specimen/Kreon)
