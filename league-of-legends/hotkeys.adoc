@@ -13,28 +13,28 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 [options="header"]
 |===
 | Key | Description
-| T | Item 1
+| 1 | Item 1
 | 2 | Item 2
 | 3 | Item 3
-| 4 | Trinket
+| T | Item 4
 | 5 | Item 5
 | H | Item 6
-| X | Item 7
-| Shift + T | Item 1 Normal Cast
+| MB4 | Trinket
+| Shift + 1 | Item 1 Normal Cast
 | Shift + 2 | Item 2 Normal Cast
-| Shift + 3 | Item 4 Normal Cast
-| Shift + 4 | Trinket Normal Cast
+| Shift + 3 | Item 3 Normal Cast
+| Shift + T | Item 4 Normal Cast
 | Shift + 5 | Item 5 Normal Cast
 | Shift + H | Item 6 Normal Cast
-| Shift + X | Item 7 Normal Cast
+| Shift + 4 | Trinket Normal Cast
 |===
 
 .Player Movement
 [options="header"]
 |===
 | Key | Description
-| Player Attack Move Click | A
-| Player Attack Move | 1
+| Player Attack Move Click | Z
+| Player Attack Move | A
 |===
 
 .Camera Control
@@ -47,14 +47,22 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 | Select Ally 2 | F2
 | Select Ally 3 | F3
 | Select Ally 4 | F4
+| Toggle Camera Lock | Unbounded
 |===
+
+.Display
+[options="header"]
+|===
+| Key | Description
+| Toggle FPS Display | Shift Ctrl Alt F
 
 .Communication
 [options="header"]
 |===
 | Key | Description
-| Area is Warded Ping | N
-| Chat History | Z
+| Caution Ping | V
+| Quick Enenmy Vision Ping | N
+| Chat History | `
 | Open Instant Emote Wheel | Ctrl + 6
 |===
 
@@ -62,6 +70,26 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 [options="header"]
 |===
 | Key | Description
-| Show Advanced Player Stats | `
-| Toggle Basic Player Stats | Ctrl + C
+| Show Advanced Player Stats | X
+| Toggle Basic Player Stats | Ctrl + /
 |===
+
+.Interface
+[options="header"]
+|===
+| Key | Description
+| HUD Scale | 50
+| Cursor Scale | 50
+| Shop Scale | 55
+| Chat Scale | 66
+| Minimap Scale | 33
+
+.Interface - Others
+[options="header"]
+|===
+| Key | Description
+| Enable HUD animations | False
+| Show Spell costs | True
+| Show Spell Recommendation | False
+| Enable All Minimap Timers | True
+| Show timestamps | True
