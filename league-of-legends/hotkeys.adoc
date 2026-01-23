@@ -55,6 +55,7 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 |===
 | Key | Description
 | Toggle FPS Display | Shift Ctrl Alt F
+|===
 
 .Communication
 [options="header"]
@@ -83,6 +84,7 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 | Shop Scale | 55
 | Chat Scale | 66
 | Minimap Scale | 33
+|===
 
 .Interface - Others
 [options="header"]
@@ -93,3 +95,4 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 | Show Spell Recommendation | False
 | Enable All Minimap Timers | True
 | Show timestamps | True
+|===
