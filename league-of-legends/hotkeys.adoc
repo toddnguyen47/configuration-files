@@ -79,11 +79,11 @@ All regular spells quick cast. All regular spells + Shift = normal cast.
 [options="header"]
 |===
 | Key | Description
-| HUD Scale | 50
+| HUD Scale | 75
 | Cursor Scale | 50
 | Shop Scale | 55
 | Chat Scale | 65
-| Minimap Scale | 40
+| Minimap Scale | 50
 |===
 
 .Interface - Others
