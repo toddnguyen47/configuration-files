@@ -60,6 +60,7 @@ Various fonts I have used.
 ## Monospace
 
 - [JuliaMono](https://juliamono.netlify.app/)
+- [Mononoki Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
 - [Agave](https://github.com/blobject/agave)
 - [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono)
 - [Spline Sans Mono](https://github.com/SorkinType/SplineSansMono)
