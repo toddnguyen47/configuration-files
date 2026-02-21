@@ -63,6 +63,7 @@ Various fonts I have used.
 - [Mononoki Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
 - [Agave](https://github.com/blobject/agave)
 - [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono)
+- [Code New Roman](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CodeNewRoman.zip)
 - [Spline Sans Mono](https://github.com/SorkinType/SplineSansMono)
 - [0xProto](https://github.com/0xType/0xProto)
 - [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)
