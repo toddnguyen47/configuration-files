@@ -59,8 +59,11 @@ Various fonts I have used.
 
 ## Monospace
 
+OPTIONAL: See if the fonts have a nerd font option available.
+
 - [JuliaMono](https://juliamono.netlify.app/)
-- [Mononoki Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
+- [Mononoki](https://github.com/madmalik/mononoki)
+- [Martian Mono](https://github.com/evilmartians/mono)
 - [Monaspace](https://monaspace.githubnext.com/)
 - [Agave](https://github.com/blobject/agave)
 - [Code New Roman](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CodeNewRoman.zip)
