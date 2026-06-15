@@ -12,12 +12,12 @@ layout {
 
     // Example tabs using the template
     tab name="Primary" focus=true {
+        pane
+    }
+    tab name="Secondary" {
         pane split_direction="vertical" {
             pane
             pane
         }
-    }
-    tab name="Secondary" {
-        pane
     }
 }
