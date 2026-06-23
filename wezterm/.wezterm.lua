@@ -19,6 +19,8 @@ config.color_scheme = "Dracula (Official)"
 
 -- Only on MacOS / Linux
 -- config.use_resize_increments = true
+-- OpenGL does not work well on MacOS
+config.front_end = "WebGpu"
 
 -- 2. Custom Startup Layout
 wezterm.on("gui-startup", function(cmd)
