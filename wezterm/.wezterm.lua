@@ -18,7 +18,7 @@ config.line_height = 1.2
 config.color_scheme = "Dracula (Official)"
 
 -- Only on MacOS / Linux
-config.use_resize_increments = true
+-- config.use_resize_increments = true
 
 -- 2. Custom Startup Layout
 wezterm.on("gui-startup", function(cmd)
@@ -30,9 +30,9 @@ wezterm.on("gui-startup", function(cmd)
 	local tab2, pane2, _ = window:spawn_tab(cmd or {})
 	tab2:set_title("Secondary")
 
-	-- Split the "Secondary" Tab vertically (creates Left and Right panes)
+	-- Split the "Secondary" Tab horizontally (creates Top and Down panes)
 	pane2:split({
-		direction = "Right",
+		direction = "Top",
 		size = 0.5,
 	})
 
