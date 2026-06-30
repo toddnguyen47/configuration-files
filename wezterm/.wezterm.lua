@@ -12,7 +12,8 @@ config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
 config.font_size = 15
-config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Medium" })
+-- config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Medium" })
+config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Regular" })
 config.line_height = 1.2
 -- config.color_scheme = "Desert (Gogh)"
 config.color_scheme = "Dracula (Official)"
