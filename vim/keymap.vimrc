@@ -6,4 +6,4 @@ let mapleader = " "
 vnoremap <leader>y "+y
 
 " Visual mode: Paste from clipboard
-vnoremap <leader>p "+p
+nnoremap <leader>p "+p
