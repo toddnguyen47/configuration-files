@@ -48,3 +48,20 @@ The tree folder directory looks like so:
 
 You can find out more by typing in `:h runtimepath`.
 
+== VS Code settings
+
+VS Code's VIM JSON settings to disable some shortcuts.
+
+[source, json]
+----
+{
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/path/to/.ideavimrc",
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-p>": false,
+        "<C-,>": false
+    }
+}
+----
