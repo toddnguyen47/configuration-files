@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("v", "y", [["+y]], { desc = "Yank visual selection to system clipboard" })
 vim.keymap.set("v", "p", [["+p]], { desc = "Paste system clipboard over visual selection" })
+vim.keymap.set("n", "p", [["+p]], { desc = "Paste system clipboard over visual selection" })
