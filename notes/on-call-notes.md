@@ -9,6 +9,7 @@ If a problem occurs, find out the following:
 ## Resolution
 
 <!-- What steps were done to resolve the resolution. -->
+<!-- Include any dashboard proof. -->
 
 ## Result
 
