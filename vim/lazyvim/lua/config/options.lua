@@ -6,3 +6,5 @@ vim.opt.clipboard = ""
 vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.wrap = true
+
+vim.opt.conceallevel = 0 -- Always show raw markdown syntax (like backticks)
