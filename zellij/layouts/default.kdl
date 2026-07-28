@@ -15,7 +15,7 @@ layout {
         pane
     }
     tab name="Secondary" {
-        pane split_direction="vertical" {
+        pane split_direction="horizontal" {
             pane
             pane
         }
