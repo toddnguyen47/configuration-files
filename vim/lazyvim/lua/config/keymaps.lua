@@ -4,3 +4,4 @@
 vim.keymap.set("v", "<leader>y", [["+y]], { desc = "Yank visual selection to system clipboard" })
 vim.keymap.set("v", "<leader>p", [["+p]], { desc = "Paste system clipboard over visual selection" })
 vim.keymap.set("n", "<leader>p", [["+p]], { desc = "Paste system clipboard over visual selection" })
+vim.keymap.set("n", "<leader>yy", [["+yy]], { desc = "Yank line into system clipboard" })
