@@ -34,10 +34,10 @@ wezterm.on("gui-startup", function(cmd)
 	tab2:set_title("Secondary")
 
 	-- Split the "Secondary" Tab horizontally (creates Top and Down panes)
-	pane2:split({
-		direction = "Top",
-		size = 0.5,
-	})
+	-- pane2:split({
+	-- 	direction = "Top",
+	-- 	size = 0.5,
+	-- })
 
 	-- Bring focus back to the Primary Tab on startup
 	tab1:activate()
