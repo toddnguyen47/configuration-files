@@ -53,7 +53,7 @@ Various fonts I have used.
 - [Domine](https://fonts.google.com/specimen/Domine)
 - [PT Serif](https://fonts.google.com/specimen/PT+Serif)
 - [Lora](https://fonts.google.com/specimen/Lora)
-- [Sorts Mill Goudy](https://fonts.google.com/specimen/Sorts+Mill+Goudy?preview.script=Latn) -Goudy Oldstyle replacement
+- [Sorts Mill Goudy](https://fonts.google.com/specimen/Sorts+Mill+Goudy?preview.script=Latn) - Goudy Oldstyle replacement
 - [Spectral (Captions Only)](https://fonts.google.com/specimen/Spectral)
 
 ---
