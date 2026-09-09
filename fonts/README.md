@@ -15,7 +15,8 @@ Various fonts I have used.
 ---
 
 ## Popular Font Alternatives
-[Reddit Thread – Open Source Core Font Replacements](https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_replacements/)
+- [Reddit Thread – Open Source Core Font Replacements](https://www.reddit.com/r/linux/comments/a5vp5h/a_list_of_open_source_core_font_replacements/)
+- https://open-foundry.com/
 
 ---
 
