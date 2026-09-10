@@ -28,6 +28,7 @@ Various fonts I have used.
 - [Lato](https://fonts.google.com/specimen/Lato)
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - [PT Sans](https://fonts.google.com/specimen/PT+Sans)
+- [Figtree](https://fonts.google.com/specimen/Figtree)
 - [Oxygen](https://fonts.google.com/specimen/Oxygen)
 - [Lexend](https://fonts.google.com/specimen/Lexend)
 - [Inter](https://github.com/rsms/inter)
