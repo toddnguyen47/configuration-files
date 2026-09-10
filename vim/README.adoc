@@ -62,6 +62,10 @@ VS Code's VIM JSON settings to disable some shortcuts.
         "<C-f>": false,
         "<C-p>": false,
         "<C-,>": false
+    },
+    "workbench.colorCustomizations": {
+        "editor.findMatchBackground": "#00000000",
+        "editor.findMatchHighlightBackground": "#00000000"
     }
 }
 ----
