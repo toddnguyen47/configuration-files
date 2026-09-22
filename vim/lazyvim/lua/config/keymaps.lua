@@ -5,3 +5,5 @@ vim.keymap.set("v", "<leader>y", [["+y]], { desc = "Yank visual selection to sys
 vim.keymap.set("v", "<leader>p", [["+p]], { desc = "Paste system clipboard over visual selection" })
 vim.keymap.set("n", "<leader>p", [["+p]], { desc = "Paste system clipboard over visual selection" })
 vim.keymap.set("n", "<leader>yy", [["+yy]], { desc = "Yank line into system clipboard" })
+vim.keymap.set("n", "<leader>0", '"0p', { desc = "Paste from yank register 0" })
+vim.keymap.set("v", "<leader>0", '"0p', { desc = "Paste from yank register 0" })
