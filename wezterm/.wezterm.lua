@@ -12,11 +12,20 @@ config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
 config.font_size = 15
--- config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Medium" })
 config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Regular" })
+--config.font = wezterm.font("Menlo", { weight = "Regular" })
 config.line_height = 1.2
 -- config.color_scheme = "Desert (Gogh)"
-config.color_scheme = "Dracula (Official)"
+-- config.color_scheme = "Dracula (Official)"
+
+-- Pick a random built-in color scheme each time the config loads
+local schemes = {}
+for name, _ in pairs(wezterm.color.get_builtin_schemes()) do
+	table.insert(schemes, name)
+end
+table.sort(schemes) -- pairs() has no fixed order, so sort for a stable list
+config.color_scheme = schemes[math.random(#schemes)]
+wezterm.log_info("Color scheme: " .. config.color_scheme)
 
 -- Only on MacOS / Linux
 -- config.use_resize_increments = true
@@ -30,8 +39,8 @@ wezterm.on("gui-startup", function(cmd)
 	tab1:set_title("Primary")
 
 	-- Create the "Secondary" Tab
-	local tab2, pane2, _ = window:spawn_tab(cmd or {})
-	tab2:set_title("Secondary")
+	-- local tab2, pane2, _ = window:spawn_tab(cmd or {})
+	-- tab2:set_title("Secondary")
 
 	-- Split the "Secondary" Tab horizontally (creates Top and Down panes)
 	-- pane2:split({
