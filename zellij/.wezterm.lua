@@ -1,0 +1,59 @@
+-- Pull in the wezterm API
+local wezterm = require("wezterm")
+
+-- This will hold the configuration.
+local config = wezterm.config_builder()
+
+-- Format the timestamp exactly how you want it
+local iso_timestamp = wezterm.strftime("%Y-%m-%dT%H:%M:%S")
+
+-- This is where you actually apply your config choices.
+
+-- For example, changing the initial geometry for new windows:
+config.initial_cols = 100
+config.initial_rows = 28
+
+-- or, changing the font size and color scheme.
+config.font_size = 15
+config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Regular" })
+--config.font = wezterm.font("Menlo", { weight = "Regular" })
+config.line_height = 1.2
+-- config.color_scheme = "Desert (Gogh)"
+-- config.color_scheme = "Dracula (Official)"
+
+-- Pick a random built-in color scheme each time the config loads
+local schemes = {}
+for name, _ in pairs(wezterm.color.get_builtin_schemes()) do
+	table.insert(schemes, name)
+end
+table.sort(schemes) -- pairs() has no fixed order, so sort for a stable list
+config.color_scheme = schemes[math.random(#schemes)]
+wezterm.log_info(iso_timestamp .. ": Color scheme: " .. config.color_scheme)
+
+-- Only on MacOS / Linux
+-- config.use_resize_increments = true
+-- OpenGL does not work well on MacOS
+config.front_end = "WebGpu"
+
+-- 2. Custom Startup Layout
+wezterm.on("gui-startup", function(cmd)
+	-- Create the window and the "Primary" Tab (Single pane)
+	local tab1, pane1, window = wezterm.mux.spawn_window(cmd or {})
+	tab1:set_title("Primary")
+
+	-- Create the "Secondary" Tab
+	-- local tab2, pane2, _ = window:spawn_tab(cmd or {})
+	-- tab2:set_title("Secondary")
+
+	-- Split the "Secondary" Tab horizontally (creates Top and Down panes)
+	-- pane2:split({
+	-- 	direction = "Top",
+	-- 	size = 0.5,
+	-- })
+
+	-- Bring focus back to the Primary Tab on startup
+	tab1:activate()
+end)
+
+-- Finally, return the configuration to wezterm:
+return config
