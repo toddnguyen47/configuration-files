@@ -4,6 +4,9 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+-- Format the timestamp exactly how you want it
+local iso_timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
+
 -- This is where you actually apply your config choices.
 
 -- For example, changing the initial geometry for new windows:
@@ -25,7 +28,7 @@ for name, _ in pairs(wezterm.color.get_builtin_schemes()) do
 end
 table.sort(schemes) -- pairs() has no fixed order, so sort for a stable list
 config.color_scheme = schemes[math.random(#schemes)]
-wezterm.log_info("Color scheme: " .. config.color_scheme)
+wezterm.log_info(string.format("[%s] Color scheme: %s", iso_timestamp, config.color_scheme))
 
 -- Only on MacOS / Linux
 -- config.use_resize_increments = true
